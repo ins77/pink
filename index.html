@@ -4,21 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
-    <title>Site Title</title>
+    <title>Pink</title>
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
       
     <header class="header">
-
+      <div class="header__top">
+        <a href="#"><h1 class="logo">Pink</h1></a>
+        <nav class="main-nav">
+          <span class="main-nav__toggle"></span>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Информация</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Возможности</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Отзывы</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Стоимость</a>
+            </li>
+          </ul>
+        </nav>
+      </div><!-- top-menu -->
+      <p class="title-text title-text--invert">Взгляните на жизнь иначе!</p> 
+      <div class="header__img-wrapper"> <!-- не уверен в необходимости обертки -->
+        <img src="img/hand.png" alt="Hand with iphone">
+      </div><!-- header__img-wrapper -->  
+      <div class="download">
+        <a class="download__btn" href="#">Скачать приложение</a>
+        <i class="download__icon download__icon--apple">Apple</i> 
+        <i class="download__icon download__icon--android">Android</i> 
+        <i class="download__icon download__icon--windows">Windows</i> 
+        <p class="page-text page-text--invert">доступно для iPhone, iPad, Android, Windows phone, Mac OSm Windows 8</p>
+      </div><!-- download -->
     </header>
 
     <main>
+      <div class="info">
+        <header class="info__header">
+          <p class="title-text">Устали от серости мегаполиса?</p>
+          <p class="title-text">Нам есть, что вам предложить!</p>
+        </header>
+        <div class="info__features">
+          <div class="info__item">
+            <h2 class="h2">Поднимает настроение</h2>
+            <p class="page-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div><!-- features__item -->
+          <div class="info__item">
+            <h2 class="h2">Меняет мир вокруг</h2>
+            <p class="page-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div><!-- features__item -->
+          <div class="info__item">
+            <h2 class="h2">Заводит новых друзей</h2>
+            <p class="page-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div><!-- features__item -->
+          <div class="features__img-wrapper">
+            <img src="img/iphone-hello.png" alt="iPhone">
+          </div><!-- features__img-wrapper -->
+      </div><!-- info -->
 
+      <div class="review">
+        <h2 class="h2">Николай Петров</h2>
+        <blockquote class="quote-text"> Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>  
+      </div><!-- review -->
+
+      <div class="price">
+        <div class="price-option price-option--hit">
+          <header class="price-option__header">
+            <h3 class="price-option__title">Стандарт</h3>
+            <span class="price-option__cost">3,99 USD</span>
+          </header>
+          <ul class="price-option__list">
+            <li class="price-option__item price-option__item--true">Розовый фильтр</li>
+            <li class="price-option__item price-option__item--true">Смайлики</li>
+            <li class="price-option__item price-option__item--false">Комментарии</li>
+          </ul>
+        </div><!-- price-option -->    
+      </div><!-- price -->
     </main>
 
     <footer class="footer">
-    
+      <div class="contacts">
+        <p class="title-text">Остались вопросы? Свяжитесь с нами!</p>
+        <span class="contacts__title">Звоните: </span>
+        <p class="contacts__text">8 (800) 1000 900</p>
+        <span class="contacts__title">Пишите: </span>
+        <p class="contacts__text">hello@pinkapp.ru</p>
+        <span class="contacts__title">Приезжайте в гости: </span>
+        <p class="contacts__text">Санкт-Петербург, Невский проспект, д.20</p>
+      </div><!-- contacts -->
+      <img class="footer__map" src="img/map.jpg" alt="map">
     </footer>
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
