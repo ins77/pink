@@ -31,71 +31,91 @@
         </nav>
       </div><!-- top-menu -->
       <p class="title-text title-text--invert">Взгляните на жизнь иначе!</p> 
-      <div class="header__img-wrapper"> <!-- не уверен в необходимости обертки -->
-        <img src="img/hand.png" alt="Hand with iphone">
-      </div><!-- header__img-wrapper -->  
+      <img class="hand-phone" src="img/hand.png" alt="Hand with iphone">
       <div class="download">
         <a class="download__btn" href="#">Скачать приложение</a>
-        <i class="download__icon download__icon--apple">Apple</i> 
-        <i class="download__icon download__icon--android">Android</i> 
-        <i class="download__icon download__icon--windows">Windows</i> 
+        <a class="download__icon download__icon--apple" href="#">Apple</a> 
+        <a class="download__icon download__icon--android" href="#">Android</a> 
+        <a class="download__icon download__icon--windows" href="#">Windows</a> 
         <p class="page-text page-text--invert">доступно для iPhone, iPad, Android, Windows phone, Mac OSm Windows 8</p>
       </div><!-- download -->
     </header>
 
-    <main>
-      <div class="info">
-        <header class="info__header">
-          <p class="title-text">Устали от серости мегаполиса?</p>
-          <p class="title-text">Нам есть, что вам предложить!</p>
-        </header>
-        <div class="info__features">
-          <div class="info__item">
-            <h2 class="h2">Поднимает настроение</h2>
-            <p class="page-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </div><!-- features__item -->
-          <div class="info__item">
-            <h2 class="h2">Меняет мир вокруг</h2>
-            <p class="page-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </div><!-- features__item -->
-          <div class="info__item">
-            <h2 class="h2">Заводит новых друзей</h2>
-            <p class="page-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </div><!-- features__item -->
-          <div class="features__img-wrapper">
-            <img src="img/iphone-hello.png" alt="iPhone">
-          </div><!-- features__img-wrapper -->
-      </div><!-- info -->
-
-      <div class="review">
+    <div class="info">
+      <div class="info__header">
+        <p class="title-text">Устали от серости мегаполиса?</p>
+        <p class="title-text">Нам есть, что вам предложить!</p>
+      </div>
+      <div class="info__features">
+        <div class="info__item">
+          <h2 class="h2">Поднимает настроение</h2>
+          <p class="page-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </div><!-- features__item -->
+        <div class="info__item">
+          <h2 class="h2">Меняет мир вокруг</h2>
+          <p class="page-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div><!-- features__item -->
+        <div class="info__item">
+          <h2 class="h2">Заводит новых друзей</h2>
+          <p class="page-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div><!-- features__item -->
+      </div><!-- info__features -->
+    </div><!-- info -->
+ 
+    <div class="review">
+      <div class="review__controls">
+        <i class="review__point review__point--active"></i>
+        <i class="review__point"></i>
+        <i class="review__point"></i>
+      </div><!-- review__controls -->
+      <div class="review__item">
         <h2 class="h2">Николай Петров</h2>
         <blockquote class="quote-text"> Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>  
-      </div><!-- review -->
+      </div><!-- review__item -->
+      <div class="review__item">
+        <h2 class="h2">Николай Петров</h2>
+        <blockquote class="quote-text"> Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>  
+      </div><!-- review__item -->
+      <div class="review__item">
+        <h2 class="h2">Николай Петров</h2>
+        <blockquote class="quote-text"> Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>  
+      </div><!-- review__item -->
+    </div><!-- review -->
 
-      <div class="price">
-        <div class="price-option price-option--hit">
-          <header class="price-option__header">
-            <h3 class="price-option__title">Стандарт</h3>
-            <span class="price-option__cost">3,99 USD</span>
-          </header>
-          <ul class="price-option__list">
-            <li class="price-option__item price-option__item--true">Розовый фильтр</li>
-            <li class="price-option__item price-option__item--true">Смайлики</li>
-            <li class="price-option__item price-option__item--false">Комментарии</li>
-          </ul>
-        </div><!-- price-option -->    
-      </div><!-- price -->
-    </main>
+    <div class="price">
+      <div class="price__controls">
+        <i class="price__point"></i>
+        <i class="price__point price__point--active"></i>
+        <i class="price__point"></i>
+      </div><!-- price__controls -->
+      <div class="price-option price-option--hit">
+        <div class="price-option__header">
+          <h3 class="price-option__title">Стандарт</h3>
+          <span class="price-option__cost">3,99 USD</span>
+        </div><!-- price-option__header -->
+        <ul class="price-option__list">
+          <li class="price-option__item price-option__item--true">Розовый фильтр</li>
+          <li class="price-option__item price-option__item--true">Смайлики</li>
+          <li class="price-option__item price-option__item--false">Комментарии</li>
+        </ul>
+      </div><!-- price-option -->
+    </div><!-- price -->
 
     <footer class="footer">
       <div class="contacts">
-        <p class="title-text">Остались вопросы? Свяжитесь с нами!</p>
-        <span class="contacts__title">Звоните: </span>
-        <p class="contacts__text">8 (800) 1000 900</p>
-        <span class="contacts__title">Пишите: </span>
-        <p class="contacts__text">hello@pinkapp.ru</p>
-        <span class="contacts__title">Приезжайте в гости: </span>
-        <p class="contacts__text">Санкт-Петербург, Невский проспект, д.20</p>
+        <span class="title-text">Остались вопросы?<br>Свяжитесь с нами!</span>
+        <p class="contacts__text">
+          <span class="contacts__title">Звоните: </span>
+          8 (800) 1000 900
+        </p>
+        <p class="contacts__text">
+          <span class="contacts__title">Пишите: </span>
+          hello@pinkapp.ru
+        </p>
+        <p class="contacts__text">
+          <span class="contacts__title">Приезжайте в гости: </span>
+          Санкт-Петербург, Невский проспект, д.20
+        </p>
       </div><!-- contacts -->
       <img class="footer__map" src="img/map.jpg" alt="map">
     </footer>
