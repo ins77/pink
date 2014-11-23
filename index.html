@@ -19,10 +19,10 @@
               <a href="#" class="main-nav__link  main-nav__link--active">Информация</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link  disabled">Возможности</a>
+              <a href="#" class="main-nav__link">Возможности</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link  disabled">Отзывы</a>
+              <a href="#" class="main-nav__link">Отзывы</a>
             </li>
             <li class="main-nav__item">
               <a href="#" class="main-nav__link">Стоимость</a>
@@ -35,9 +35,18 @@
       <img class="hand-phone" src="img/hand.png" alt="Hand with iphone">
       <div class="download">
         <a class="download__btn" href="#">Скачать приложение</a>
-        <a class="download__icon  download__icon--apple" href="#" title="Download for Apple">Apple</a> 
-        <a class="download__icon  download__icon--android" href="#" title="Download for Android">Android</a> 
-        <a class="download__icon  download__icon--windows" href="#" title="Download for Windows">Windows</a> 
+        <div class="download__icon-wrap">
+          <a class="download__icon  download__icon--apple" href="#" title="Download for Apple">Apple</a>
+        </div>
+        <!-- /download__icon-wrap -->
+        <div class="download__icon-wrap">
+          <a class="download__icon  download__icon--android" href="#" title="Download for Android">Android</a>
+        </div>
+        <!-- /download__icon-wrap -->
+        <div class="download__icon-wrap">
+          <a class="download__icon  download__icon--windows" href="#" title="Download for Windows">Windows</a>
+        </div>
+        <!-- /download__icon-wrap -->
         <p class="page-text  page-text--invert">Доступно для iPhone, iPad, Android, Windows phone, Mac OSm Windows 8</p>
       </div>
       <!-- /download -->
@@ -54,54 +63,54 @@
           <h2 class="h2">Поднимает настроение</h2>
           <p class="page-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
         </div>
-        <!-- /features__item -->
+        <!-- /info__item -->
         <div class="info__item">
           <h2 class="h2">Меняет мир вокруг</h2>
           <p class="page-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </div>
-        <!-- /features__item -->
+        <!-- /info__item -->
         <div class="info__item">
           <h2 class="h2">Заводит новых друзей</h2>
           <p class="page-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </div>
-        <!-- /features__item -->
+        <!-- /info__item -->
       </div>
       <!-- /info__features -->
     </div>
     <!-- /info -->
  
-    <div class="review">
-      <div class="review__controls">
-        <i class="review__point  review__point--active"></i>
-        <i class="review__point"></i>
-        <i class="review__point"></i>
+    <div class="slider  slider--reviews">
+      <div class="slider__controls">
+        <i class="slider__point  slider__point--active"></i>
+        <i class="slider__point"></i>
+        <i class="slider__point"></i>
       </div>
-      <!-- /review__controls -->
-      <div class="review__item">
+      <!-- /slider__controls -->
+      <div class="review">
         <h2 class="h2">Николай Петров</h2>
         <blockquote class="quote-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>  
       </div>
-      <!-- /review__item -->
-      <div class="review__item">
+      <!-- /review -->
+      <div class="review">
         <h2 class="h2">Николай Петров</h2>
         <blockquote class="quote-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>  
       </div>
-      <!-- /review__item -->
-      <div class="review__item">
+      <!-- /review -->
+      <div class="review">
         <h2 class="h2">Николай Петров</h2>
         <blockquote class="quote-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>  
       </div>
-      <!-- /review__item -->
+      <!-- /review -->
     </div>
-    <!-- /review -->
+    <!-- /slider -->
 
-    <div class="price">
-      <div class="price__controls">
-        <i class="price__point"></i>
-        <i class="price__point  price__point--active"></i>
-        <i class="price__point"></i>
+    <div class="slider  slider--price">
+      <div class="slider__controls">
+        <i class="slider__point"></i>
+        <i class="slider__point  price__point--active"></i>
+        <i class="slider__point"></i>
       </div>
-      <!-- /price__controls -->
+      <!-- /slider__controls -->
       <div class="price-option">
         <div class="price-option__header">
           <h3 class="price-option__title">Стандарт</h3>
@@ -142,7 +151,7 @@
       </div>
       <!-- /price-option -->
     </div>
-    <!-- /price -->
+    <!-- /slider -->
 
     <footer class="footer">
       <div class="contacts">
@@ -164,7 +173,7 @@
       <img class="footer__map" src="img/map.jpg" alt="map">
     </footer>
 
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/lib/jquery-2.1.1.min.js"></script>
     <script src="js/main.js"></script>
 
   </body>
