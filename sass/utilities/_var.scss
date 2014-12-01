@@ -7,21 +7,21 @@ $container_total: $container_inner + (2*$container_offset);
 
 
 // font-family
-$ff_base: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+$font-family_base: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
 // font-size
-$fz_base: 14px;
-$fz_sm: 18px;
-$fz_md: 24px;
+$font-size_base: 14px;
+$font-size_sm: 18px;
+$font-size_md: 24px;
 // line-height
-$lh_base: 24px;
-$lh_sm: 18px;
-$lh_md: 30px;
-$lh_lg: 32px;
-$lh_auto: 1.2;
+$line-height_base: 24px;
+$line-height_sm: 18px;
+$line-height_md: 30px;
+$line-height_lg: 32px;
+$line-height_auto: 1.2;
 // font-weight
-$fw_light: 300;
-$fw_regular: 400;
-$fw_bold: 700;
+$font-weight_light: 300;
+$font-weight_regular: 400;
+$font-weight_bold: 700;
 
 
 // colors http://chir.ag/projects/name-that-color
@@ -40,8 +40,8 @@ $c_text: $c_clay;
 
 
 // border-radius
-$bdrs_base: 2px;
-$bdrs_round: 50%;
+$border-radius_base: 2px;
+$border-radius_round: 50%;
 
 
 // Responsive

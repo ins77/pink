@@ -43,9 +43,9 @@
     top: 70px;
     display: none;
     width: 100%;
-    font-size: $fz_sm;
-    line-height: ($lh_lg/$fz_sm);
-    font-weight: $fw_bold;
+    font-size: $font-size_sm;
+    line-height: ($line-height_lg/$font-size_sm);
+    font-weight: $font-weight_bold;
     text-transform: uppercase;
   }
 

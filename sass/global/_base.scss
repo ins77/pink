@@ -31,10 +31,10 @@ ul {
 body {
   width: 320px;
   margin: 0 auto;
-  font-size: $fz_base;
-  line-height: ($lh_base/$fz_base);
-  font-family: $ff_base;
-  font-weight: $fw_regular;
+  font-size: $font-size_base;
+  line-height: ($line-height_base/$font-size_base);
+  font-family: $font-family_base;
+  font-weight: $font-weight_regular;
   color: $c_text;
   text-align: center;
 }

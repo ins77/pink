@@ -1,7 +1,7 @@
 .download {
   padding-top: 28px;
   padding-bottom: 30px;
-  font-weight: $fw_light;
+  font-weight: $font-weight_light;
   background-color: $c_clay;   
 
   &__btn {
@@ -11,9 +11,9 @@
     margin-bottom: 27px;
     border: 3px solid $c_white;
     color: $c_white;
-    font-weight: $fw_bold;
-    font-size: $fz_sm;
-    line-height: ($lh_sm/$fz_sm);
+    font-weight: $font-weight_bold;
+    font-size: $font-size_sm;
+    line-height: ($line-height_sm/$font-size_sm);
     border-radius: 30px;
   }
 

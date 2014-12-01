@@ -7,17 +7,17 @@
 
   &__text {
     margin-bottom: 20px;
-    font-size: $fz_md;
-    line-height: $lh_auto;
-    font-weight: $fw_light;
+    font-size: $font-size_md;
+    line-height: $line-height_auto;
+    font-weight: $font-weight_light;
     color: $c_cerise;
   }
 
   &__title {
     display: block;
-    font-size: $fz_sm;
+    font-size: $font-size_sm;
     color: $c_clay;
-    font-weight: $fw_bold;
+    font-weight: $font-weight_bold;
   }
 
   &:after {
