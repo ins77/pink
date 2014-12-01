@@ -10,16 +10,14 @@
   <body>
       
     <header class="page-header">
-
-      <div class="header__top">
-
-        <h1 class="logo"><a href="index.html">Pink</a></h1>
-
-        <nav class="main-nav">
-          <span class="main-nav__toggle"></span>
+        
+      <nav class="main-nav">   <!-- add .main-nav--active for active version -->
+        <div class="container">
+          <h1><a class="logo" href="index.html">Pink</a></h1>
+          <a class="main-nav__toggle" href="#"></a>
           <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link  main-nav__link--active">Информация</a>
+            <li class="main-nav__item  main-nav__item--active">
+              <a href="#" class="main-nav__link">Информация</a>
             </li>
             <li class="main-nav__item">
               <a href="#" class="main-nav__link">Возможности</a>
@@ -31,31 +29,36 @@
               <a href="#" class="main-nav__link">Стоимость</a>
             </li>
           </ul>
-        </nav>
-
+        </div>
+      </nav>
+      
+      <div class="page-header__intro">
+        <p class="title-text">Взгляните на жизнь<br>иначе!</p> 
+        <img class="hand-phone" src="img/header_bg_hand.png" alt="Hand with iphone">
       </div>
-      <!-- /.header__top -->
-
-      <p class="title-text  title-text--invert">Взгляните на жизнь иначе!</p> 
-      <img class="hand-phone" src="img/hand.png" alt="Hand with iphone">
 
       <div class="download">
 
-        <a class="download__btn" href="#">Скачать приложение</a>
+        <div class="container">
 
-        <div class="download__icon-wrap">
-          <a class="download__icon  download__icon--apple" href="#" title="Download for Apple">Apple</a>
-        </div>
+          <a class="download__btn" href="#">Скачать приложение</a>
+          
+          <div class="download__icon-wrap">
+            <a class="download__icon  download__icon--apple" href="#" title="Download for Apple">Apple</a>
+          </div>
+          
+          <div class="download__icon-wrap">
+            <a class="download__icon  download__icon--android" href="#" title="Download for Android">Android</a>
+          </div>
+          
+          <div class="download__icon-wrap">
+            <a class="download__icon  download__icon--windows" href="#" title="Download for Windows">Windows</a>
+          </div>
+          
+          <p>Доступно для iPhone, iPad, Android, Windows phone, Mac OSm Windows 8</p>
 
-        <div class="download__icon-wrap">
-          <a class="download__icon  download__icon--android" href="#" title="Download for Android">Android</a>
         </div>
-        
-        <div class="download__icon-wrap">
-          <a class="download__icon  download__icon--windows" href="#" title="Download for Windows">Windows</a>
-        </div>
-        
-        <p class="page-text  page-text--invert">Доступно для iPhone, iPad, Android, Windows phone, Mac OSm Windows 8</p>
+        <!-- /.container -->
 
       </div>
       <!-- /.download -->
@@ -73,20 +76,25 @@
 
       <section class="info__features">
 
-        <div class="info__item">
-          <h2 class="h2">Поднимает настроение</h2>
-          <p class="page-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </div>
+        <div class="container">
 
-        <div class="info__item">
-          <h2 class="h2">Меняет мир вокруг</h2>
-          <p class="page-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </div>
+          <div class="info__item">
+            <h2 class="h2">Поднимает настроение</h2>
+            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
+          
+          <div class="info__item">
+            <h2 class="h2">Меняет мир вокруг</h2>
+            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+          
+          <div class="info__item">
+            <h2 class="h2">Заводит новых друзей</h2>
+            <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
 
-        <div class="info__item">
-          <h2 class="h2">Заводит новых друзей</h2>
-          <p class="page-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </div>
+        <!-- /.container -->
 
       </section>
       <!-- /.info__features -->
@@ -97,31 +105,34 @@
 
     <div class="slider  slider--reviews">
 
+      <div class="slides">
+        <div class="slides__item">
+          <section class="review">
+            <h2 class="h2">Николай Петров</h2>
+            <blockquote class="quote-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>  
+          </section>
+        </div>
+        
+        <div class="slides__item">
+          <section class="review">
+            <h2 class="h2">Николай Петров</h2>
+            <blockquote class="quote-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>  
+          </section>
+        </div>
+        
+        <div class="slides__item">
+          <section class="review">
+            <h2 class="h2">Николай Петров</h2>
+            <blockquote class="quote-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>  
+          </section>
+        </div>
+      </div>
+      <!-- /.slides -->
+      
       <div class="slider__controls">
         <i class="slider__switcher  slider__switcher--active"></i>
         <i class="slider__switcher"></i>
         <i class="slider__switcher"></i>
-      </div>
-
-      <div class="slide">
-        <section class="review">
-          <h2 class="h2">Николай Петров</h2>
-          <blockquote class="quote-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>  
-        </section>
-      </div>
-
-      <div class="slide">
-        <section class="review">
-          <h2 class="h2">Николай Петров</h2>
-          <blockquote class="quote-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>  
-        </section>
-      </div>
-
-      <div class="slide">
-        <section class="review">
-          <h2 class="h2">Николай Петров</h2>
-          <blockquote class="quote-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>  
-        </section>
       </div>
 
     </div>
@@ -130,52 +141,55 @@
 
     <div class="slider  slider--price">
 
+      <div class="slides">
+        <div class="slides__item">
+          <section class="price-option">
+            <header class="price-option__header">
+              <h3 class="price-option__title">Стандарт</h3>
+              <span class="price-option__cost">3,99 USD</span>
+            </header>
+            <ul class="price-option__list">
+              <li class="price-option__item">Розовый фильтр<i class="price-option__icon  price-option__icon--true">Да</i></li>
+              <li class="price-option__item">Смайлики<i class="price-option__icon  price-option__icon--true">Да</i></li>
+              <li class="price-option__item">Комментарии<i class="price-option__icon  price-option__icon--false">Нет</i></li>
+            </ul>
+          </section>
+        </div>
+        
+        <div class="slides__item">
+          <section class="price-option  price-option--hit">
+            <header class="price-option__header">
+              <h3 class="price-option__title">Стандарт</h3>
+              <span class="price-option__cost">3,99 USD</span>
+            </header>
+            <ul class="price-option__list">
+              <li class="price-option__item">Розовый фильтр<i class="price-option__icon  price-option__icon--true">Да</i></li>
+              <li class="price-option__item">Смайлики<i class="price-option__icon  price-option__icon--true">Да</i></li>
+              <li class="price-option__item">Комментарии<i class="price-option__icon  price-option__icon--false">Нет</i></li>
+            </ul>
+          </section>
+        </div>
+        
+        <div class="slides__item">
+          <section class="price-option">
+            <header class="price-option__header">
+              <h3 class="price-option__title">Стандарт</h3>
+              <span class="price-option__cost">3,99 USD</span>
+            </header>
+            <ul class="price-option__list">
+              <li class="price-option__item">Розовый фильтр<i class="price-option__icon  price-option__icon--true">Да</i></li>
+              <li class="price-option__item">Смайлики<i class="price-option__icon  price-option__icon--true">Да</i></li>
+              <li class="price-option__item">Комментарии<i class="price-option__icon  price-option__icon--false">Нет</i></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <!-- /.slides -->
+
       <div class="slider__controls">
+        <i class="slider__switcher"></i>
         <i class="slider__switcher  slider__switcher--active"></i>
         <i class="slider__switcher"></i>
-        <i class="slider__switcher"></i>
-      </div>
-
-      <div class="slide">
-        <section class="price-option">
-          <header class="price-option__header">
-            <h3 class="price-option__title">Стандарт</h3>
-            <span class="price-option__cost">3,99 USD</span>
-          </header>
-          <ul class="price-option__list">
-            <li class="price-option__item">Розовый фильтр<i class="price-option__icon  price-option__icon--true">Да</i></li>
-            <li class="price-option__item">Смайлики<i class="price-option__icon  price-option__icon--true">Да</i></li>
-            <li class="price-option__item">Комментарии<i class="price-option__icon  price-option__icon--false">Нет</i></li>
-          </ul>
-        </section>
-      </div>
-      
-      <div class="slide">
-        <section class="price-option  price-option--hit">
-          <header class="price-option__header">
-            <h3 class="price-option__title">Стандарт</h3>
-            <span class="price-option__cost">3,99 USD</span>
-          </header>
-          <ul class="price-option__list">
-            <li class="price-option__item">Розовый фильтр<i class="price-option__icon  price-option__icon--true">Да</i></li>
-            <li class="price-option__item">Смайлики<i class="price-option__icon  price-option__icon--true">Да</i></li>
-            <li class="price-option__item">Комментарии<i class="price-option__icon  price-option__icon--false">Нет</i></li>
-          </ul>
-        </section>
-      </div>
-
-      <div class="slide">
-        <section class="price-option  price-option--hit">
-          <header class="price-option__header">
-            <h3 class="price-option__title">Стандарт</h3>
-            <span class="price-option__cost">3,99 USD</span>
-          </header>
-          <ul class="price-option__list">
-            <li class="price-option__item">Розовый фильтр<i class="price-option__icon  price-option__icon--true">Да</i></li>
-            <li class="price-option__item">Смайлики<i class="price-option__icon  price-option__icon--true">Да</i></li>
-            <li class="price-option__item">Комментарии<i class="price-option__icon  price-option__icon--false">Нет</i></li>
-          </ul>
-        </section>
       </div>
 
     </div>
@@ -207,7 +221,7 @@
       </div>
       <!-- /.contacts -->
 
-      <img class="footer__map" src="img/map.jpg" alt="map">
+      <img class="page-footer__map" src="img/map.jpg" alt="map">
 
     </footer>
 

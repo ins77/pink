@@ -1,7 +1,4 @@
 design/
-bootstrap/
 css/
-vendors/
-vendors-extensions/
-pages/
 .sass-cache/
+prepros.cfg

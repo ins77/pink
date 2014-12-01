@@ -1,0 +1,24 @@
+.title-text {
+  margin-bottom: 28px;
+  font-size: $fz_md;
+  line-height: $lh_auto;
+  font-weight: $fw_light;
+}
+
+.quote-text {
+  line-height: ($lh_md/$fz_base);
+  &:before {
+    content: "«";
+  }
+  &:after {
+    content: "»";
+  }
+}
+
+.h2 {
+  margin-bottom: 15px;
+  font-size: $fz_sm;
+  font-weight: $fw_bold;
+  line-height: ($lh-base/$fz_sm);
+  color: $c_black;
+}

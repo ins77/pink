@@ -1,0 +1,11 @@
+.page-header {
+  padding-top: 66px;
+  color: $c_white;
+  background: $c_clay image-url("header_bg.jpg") no-repeat 50% 0;
+
+  &__intro {
+  	height: 392px;
+    padding-top: 22px;
+    overflow: hidden;
+  }
+}

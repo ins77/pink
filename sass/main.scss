@@ -1,1 +1,22 @@
+// compass
+@import "compass";
+@import "compass/layout"; // sticky footer, stretch
 
+// fonts
+@import "http://fonts.googleapis.com/css?family=Open+Sans:700,300,400&subset=latin,cyrillic";
+
+// normalize
+@import "vendor/normalize";
+
+// utilities
+@import "utilities/index";
+
+// global
+@import "global/index";
+
+// modules
+@import "modules/index";
+
+
+// responsive
+// @import "global/responsive";
