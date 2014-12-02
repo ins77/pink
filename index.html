@@ -33,31 +33,27 @@
       </nav>
       
       <div class="page-header__intro">
-        <p class="title-text">Взгляните на жизнь<br>иначе!</p> 
+        <p class="title-text">Взгляните на жизнь иначе!</p> 
         <img class="hand-phone" src="img/header_bg_hand.png" alt="Hand with iphone">
       </div>
 
       <div class="download">
 
-        <div class="container">
-
-          <a class="download__btn" href="#">Скачать приложение</a>
-          
-          <div class="download__icon-wrap">
-            <a class="download__icon  download__icon--apple" href="#" title="Download for Apple">Apple</a>
-          </div>
-          
-          <div class="download__icon-wrap">
-            <a class="download__icon  download__icon--android" href="#" title="Download for Android">Android</a>
-          </div>
-          
-          <div class="download__icon-wrap">
-            <a class="download__icon  download__icon--windows" href="#" title="Download for Windows">Windows</a>
-          </div>
-          
-          <p>Доступно для iPhone, iPad, Android, Windows phone, Mac OSm Windows 8</p>
-
+        <a class="download__btn" href="#">Скачать приложение</a>
+        
+        <div class="download__icon-wrap">
+          <a class="download__icon  download__icon--apple" href="#" title="Download for Apple">Apple</a>
         </div>
+        
+        <div class="download__icon-wrap">
+          <a class="download__icon  download__icon--android" href="#" title="Download for Android">Android</a>
+        </div>
+        
+        <div class="download__icon-wrap">
+          <a class="download__icon  download__icon--windows" href="#" title="Download for Windows">Windows</a>
+        </div>
+        
+        <p>Доступно для iPhone, iPad, Android, Windows phone, Mac OSm Windows 8</p>
         <!-- /.container -->
 
       </div>
@@ -196,39 +192,67 @@
     <!-- /.slider -->
 
 
-
     <footer class="page-footer">
-
+    
       <div class="contacts">
-
+    
         <p class="title-text">Остались вопросы?<br>Свяжитесь с нами!</p>
-
+    
         <p class="contacts__text">
           <span class="contacts__title">Звоните: </span>
           8 (800) 1000 900
         </p>
-
+    
         <p class="contacts__text">
           <span class="contacts__title">Пишите: </span>
           hello@pinkapp.ru
         </p>
-
+    
         <p class="contacts__text">
           <span class="contacts__title">Приезжайте в гости: </span>
           Санкт-Петербург, Невский проспект, д.20
         </p>
-
+    
       </div>
       <!-- /.contacts -->
-
-      <img class="page-footer__map" src="img/map.jpg" alt="map">
-
+    
+      <div class="page-footer__map" id="map_canvas"></div>
+    
     </footer>
 
 
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
     <script src="js/main.js"></script>
+    <script>
+      $(function() {
+        var mapOptions = {
+          center: new google.maps.LatLng(59.93629, 30.32121),
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          panControl: false,
+          zoomControl: false,
+          scaleControl: false,
+          streetViewControl: false,
+          overviewMapControl: false,
+          mapTypeControl: false,
+          disableDefaultUI: true,
+          disableDoubleClickZoom: true,
+          scrollwheel: false
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+        var image = 'img/map-point.png';
+        var myLatLng = new google.maps.LatLng(59.93629, 30.32121);
+        var beachMarker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          icon: image
+        });
+      });
+    </script>
+
+
 
   </body>
 </html>

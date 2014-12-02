@@ -20,14 +20,14 @@
     font-weight: $font-weight_bold;
   }
 
-  &:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 100%;
-    height: 52px;
-    background: inline-image("footer_bg_triangle.png");
-  }
+  // &:after {
+  //   content: "";
+  //   position: absolute;
+  //   left: -20px;
+  //   top: 100%;
+  //   width: 100%;
+  //   height: 52px;
+  //   background: inline-image("footer_bg_triangle.png");
+  // }
 
 }

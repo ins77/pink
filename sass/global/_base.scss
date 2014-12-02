@@ -29,7 +29,7 @@ ul {
 }
 
 body {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   font-size: $font-size_base;
   line-height: ($line-height_base/$font-size_base);

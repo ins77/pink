@@ -1,10 +1,18 @@
 .price-option {
+  position: relative;
   width: 280px;
   margin: 0 auto 40px;
   text-transform: uppercase;
 
+  &--hit:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    @include use-sprite("hit");
+  }
+
   &__header {
-    position: relative;
     padding-top: 15px;
     padding-bottom: 15px;
     border-left: 2px solid $c_mercury;
@@ -12,15 +20,6 @@
     color: $c_white;
     text-align: center;
     background-color: $c_clay;
-
-    &:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      @include use-sprite("hit");
-    }
-
   } 
   
   &__title {

@@ -41,7 +41,7 @@
 .container {
   @extend %cf;
   margin: 0 auto;
-  width: $container_total;
+  min-width: $container_total;
   padding: 0 $container_offset;
 }  
   
