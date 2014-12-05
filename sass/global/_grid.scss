@@ -1,49 +1,7 @@
-@mixin makeGreed($offset: 0px, $cols: 12, $namespace: "col") {
-  $one_col: (100%/$cols);
-  
-  // row
-  .row {
-    @extend %cf;
-    @if $offset > 0 {
-      margin-left: (- $offset);
-      margin-right: (- $offset);
-    }
-  }
-      
-  %col {
-    float: left;
-    @if $offset > 0 {
-      padding: 0 $offset;
-    }
-    @else {
-      padding: 0;
-    }
-  }
-
-  // columns
-  @for $i from 1 through $cols {
-    .#{$namespace}#{$i} {
-      width: $i*$one_col;
-      @extend %col;
-    }
-  }
-      
-  // offsets
-  @for $i from 1 through ($cols - 1) {
-    .#{$namespace}-offset-#{$i} {
-      margin-left: $i*$one_col;
-    }
-  }
-  
-}
-
-// контейнер
 .container {
-  @extend %cf;
+  @extend %clearfix;
   margin: 0 auto;
-  min-width: $container_total;
-  padding: 0 $container_offset;
+  min-width: 320px;
+  max-width: 960px;
+  padding: 0 20px;
 }  
-  
-// создаем сетку
-@include makeGreed(10px, $columns);

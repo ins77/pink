@@ -1,12 +1,13 @@
 .title-text {
-  margin-bottom: 28px;
-  font-size: $font-size_md;
-  line-height: $line-height_auto;
-  font-weight: $font-weight_light;
+  margin-bottom: 15px;
+  font-size: $font-size-md;
+  line-height: $line-height-auto;
+  font-weight: 300;
 }
 
 .quote-text {
-  line-height: ($line-height_md/$font-size_base);
+  margin: 0;
+  line-height: ($line-height-md / $font-size-base);
   &:before {
     content: "«";
   }
@@ -16,9 +17,7 @@
 }
 
 .h2 {
-  margin-bottom: 15px;
-  font-size: $font-size_sm;
-  font-weight: $font-weight_bold;
-  line-height: ($line-height_base/$font-size_sm);
-  color: $c_black;
+  font-weight: 700;
+  line-height: ($line-height-base / $font-size-sm);
+  color: #000;
 }

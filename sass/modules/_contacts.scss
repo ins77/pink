@@ -3,21 +3,21 @@
   z-index: 100;
   padding-top: 40px;
   padding-bottom: 10px;
-  background-color: $c_white;
+  background-color: #fff;
 
   &__text {
     margin-bottom: 20px;
-    font-size: $font-size_md;
-    line-height: $line-height_auto;
-    font-weight: $font-weight_light;
-    color: $c_cerise;
+    font-size: $font-size-md;
+    line-height: $line-height-auto;
+    font-weight: 300;
+    color: $pink;
   }
 
   &__title {
     display: block;
-    font-size: $font-size_sm;
-    color: $c_clay;
-    font-weight: $font-weight_bold;
+    font-size: $font-size-sm;
+    color: $blue;
+    font-weight: 700;
   }
 
   // &:after {

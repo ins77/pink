@@ -15,23 +15,24 @@
   &__header {
     padding-top: 15px;
     padding-bottom: 15px;
-    border-left: 2px solid $c_mercury;
-    border-right: 2px solid $c_mercury;
-    color: $c_white;
+    border-left: 2px solid $gray-light;
+    border-right: 2px solid $gray-light;
+    color: #fff;
     text-align: center;
-    background-color: $c_clay;
+    background-color: $blue;
   } 
   
   &__title {
-    font-size: $font-size_sm;
-    line-height: ($line-height_md/$font-size_sm);
-    font-weight: $font-weight_bold;
+    margin: 0;
+    font-size: $font-size-sm;
+    line-height: ($line-height-md / $font-size-sm);
+    font-weight: 700;
   } 
 
   &__cost {
-    font-size: $font-size_md;
-    line-height: ($line-height_md/$font-size_md);
-    font-weight: $font-weight_light;
+    font-size: $font-size-md;
+    line-height: ($line-height-md / $font-size-md);
+    font-weight: 300;
   }
 
   &__list {
@@ -41,9 +42,9 @@
   &__item {
     position: relative;
     padding: 20px 68px 17px 22px;
-    border: 2px solid $c_mercury;
+    border: 2px solid $gray-light;
     border-top: none;
-    background-color: $c_white;
+    background-color: #fff;
   }
 
   &__icon {

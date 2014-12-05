@@ -1,6 +1,6 @@
 // compass
 @import "compass";
-@import "compass/layout"; // sticky footer, stretch
+// @import "compass/layout"; // sticky footer, stretch
 
 // fonts
 @import "http://fonts.googleapis.com/css?family=Open+Sans:700,300,400&subset=latin,cyrillic";
@@ -9,14 +9,28 @@
 @import "vendor/normalize";
 
 // utilities
-@import "utilities/index";
+@import "utilities/var";
+@import "utilities/mixins";
+@import "utilities/sprite";
+@import "utilities/placeholders";
 
 // global
-@import "global/index";
+@import "global/grid";
+@import "global/base";
+@import "global/type";
+@import "global/icons-font";
 
 // modules
-@import "modules/index";
-
-
-// responsive
-// @import "global/responsive";
+@import "modules/forms";
+@import "modules/buttons";
+@import "modules/main-nav";
+@import "modules/page-header";
+@import "modules/logo";
+@import "modules/download";
+@import "modules/intro";
+@import "modules/info";
+@import "modules/slider";
+@import "modules/review";
+@import "modules/price-option";
+@import "modules/contacts";
+@import "modules/page-footer";

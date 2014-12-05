@@ -1,47 +1,31 @@
-// grid
-$columns: 12;
-$column_offset: 10px;
-$container_inner: 280px;
-$container_offset: 20px;
-$container_total: $container_inner + (2*$container_offset);
-
-
 // font-family
-$font-family_base: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+$font-family-base: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
 // font-size
-$font-size_base: 14px;
-$font-size_sm: 18px;
-$font-size_md: 24px;
+$font-size-base:  14px;
+$font-size-sm:    ($font-size-base + 4);
+$font-size-md:    ($font-size-base + 10);
 // line-height
-$line-height_base: 24px;
-$line-height_sm: 18px;
-$line-height_md: 30px;
-$line-height_lg: 32px;
-$line-height_auto: 1.2;
-// font-weight
-$font-weight_light: 300;
-$font-weight_regular: 400;
-$font-weight_bold: 700;
+$line-height-base:  24px;
+$line-height-sm:    ($line-height-base - 6);
+$line-height-md:    ($line-height-base + 6);
+$line-height-lg:    ($line-height-base + 8);
+$line-height-auto:  1.2;
 
 
 // colors http://chir.ag/projects/name-that-color
-$c_black: #000;
-$c_white: #fff;
-
-$c_clay: #283645;
-$c_mirage: #1d2631;
-$c_concrete: #f2f2f2;
-$c_cerise: #d22856;
-$c_silver: #bec2c7;
-$c_mercury: #e5e5e5;
+$gray:          #f2f2f2;
+$gray-light:    #e5e5e5;
+$gray-dark:     #bec2c7;
+$blue:          #283645;
+$blue-dark:     #1d2631;
+$pink:          #d22856;
 
 // color usage
-$c_text: $c_clay;
+$c_text: $blue;
 
 
 // border-radius
-$border-radius_base: 2px;
-$border-radius_round: 50%;
+$border-radius-base: 2px;
 
 
 // Responsive

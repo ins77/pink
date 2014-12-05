@@ -1,25 +1,6 @@
-// reset
-html, body, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q,
-samp, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label,
-legend, table, caption, tbody, tfoot, thead, tr, th, td, canvas, embed,
-figcaption, hgroup, output, ruby, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-ol,
-ul {
-  list-style-type: none;
-}
-
-
 // base styles
 * {
-  @include selection($c_white, $c_black);
+  @include selection(#fff, #000);
 }
 
 *,
@@ -31,10 +12,7 @@ ul {
 body {
   min-width: 320px;
   margin: 0 auto;
-  font-size: $font-size_base;
-  line-height: ($line-height_base/$font-size_base);
-  font-family: $font-family_base;
-  font-weight: $font-weight_regular;
+  font: 400 #{$font-size-base}/($line-height-base / $font-size-base) $font-family-base;
   color: $c_text;
   text-align: center;
 }
@@ -42,6 +20,18 @@ body {
 a {
   text-decoration: none;
 }
+
+p {
+  margin: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 
 img {
   max-width: 100%;
