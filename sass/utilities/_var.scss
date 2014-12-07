@@ -1,0 +1,34 @@
+// font-family
+$font-family-base: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+// font-size
+$font-size-base:  14px;
+$font-size-sm:    ($font-size-base + 4);
+$font-size-md:    ($font-size-base + 10);
+// line-height
+$line-height-base:  24px;
+$line-height-sm:    ($line-height-base - 6);
+$line-height-md:    ($line-height-base + 6);
+$line-height-lg:    ($line-height-base + 8);
+$line-height-auto:  1.2;
+
+
+// colors http://chir.ag/projects/name-that-color
+$gray:          #f2f2f2;
+$gray-light:    #e5e5e5;
+$gray-dark:     #bec2c7;
+$blue:          #283645;
+$blue-dark:     #1d2631;
+$pink:          #d22856;
+
+// color usage
+$c_text: $blue;
+
+
+// border-radius
+$border-radius-base: 2px;
+
+
+// Responsive
+$brkpoint_sm: 1px;
+$brkpoint_md: 768px;
+$brkpoint_lg: 1100px;

@@ -1,0 +1,23 @@
+.title-text {
+  margin-bottom: 15px;
+  font-size: $font-size-md;
+  line-height: $line-height-auto;
+  font-weight: 300;
+}
+
+.quote-text {
+  margin: 0;
+  line-height: ($line-height-md / $font-size-base);
+  &:before {
+    content: "«";
+  }
+  &:after {
+    content: "»";
+  }
+}
+
+.h2 {
+  font-weight: 700;
+  line-height: ($line-height-base / $font-size-sm);
+  color: #000;
+}

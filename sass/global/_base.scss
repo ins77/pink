@@ -1,0 +1,43 @@
+// base styles
+* {
+  @include selection(#fff, #000);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0 auto;
+  font: 400 #{$font-size-base}/($line-height-base / $font-size-base) $font-family-base;
+  color: $c_text;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+
+

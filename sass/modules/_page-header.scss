@@ -1,0 +1,31 @@
+.page-header {
+  position: relative;
+  min-height: 729px;
+  padding-top: 87px;
+  background: $blue image-url("header_bg.jpg") no-repeat 50% 0;
+  color: #fff;
+  overflow: hidden;
+
+  &__hand-img {
+    width: 320px;
+    margin: 0 auto;
+
+    &:after {
+      content: "";
+      display: block;
+      width: image-width("header_bg_hand.png");
+      height: image-height("header_bg_hand.png");
+      background: image-url("header_bg_hand.png") no-repeat 0 0;
+    }
+
+  }
+
+  &__text {
+    width: 280px;
+    margin: 0 auto 30px;
+    font-size: $font-size-md;
+    line-height: $line-height-auto;
+    font-weight: 300;
+  }
+
+}

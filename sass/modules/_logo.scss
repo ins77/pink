@@ -1,0 +1,5 @@
+.logo {
+  @extend %hide-text;
+  float: left;
+  @include use-sprite("logo");
+}
