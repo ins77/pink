@@ -9,10 +9,20 @@
   color: #fff;
   background-color: rgba(#000,.3);
 
+  @media (min-width: $screen_md) {
+    height: 110px;
+    padding-top: 7px;
+  }
+
   &--active {
     height: 70px;
     border-bottom: 1px solid #000;
     background-color: $blue;
+
+    @media (min-width: $screen_md) {
+      height: 110px;
+    }
+
   }
 
   &__toggle {
@@ -36,6 +46,15 @@
     &:after {
       top: 16px;
     }
+
+    @media (min-width: $screen_md) {
+      margin-top: 17px;
+    }
+
+    @media (min-width: $screen_lg) {
+      display: none;
+    }
+
   }
 
   &__list {
@@ -45,9 +64,23 @@
     display: none;
     width: 100%;
     font-size: $font-size-sm;
-    line-height: ($line-height-lg / $font-size-sm);
+    line-height: $line-height-lg;
     font-weight: 700;
     text-transform: uppercase;
+
+    @media (min-width: $screen_md) {
+      top: 110px;
+    }
+
+    @media (min-width: $screen_lg) {
+      position: static;
+      float: right;
+      display: block;
+      width: auto;
+      font-weight: 400;
+      text-transform: capitalize;
+    }
+
   }
 
   &__item {
@@ -56,15 +89,43 @@
     transition: all .3s;
 
     &:hover {
-      background-color: shade($blue,15%);
+      color: $pink;
+
+      @media (min-width: $screen_lg) {
+        color: #fff;
+      }
+
     }
 
     &:active {
-      background-color: shade($blue,25%);
+      color: rgba($pink,.3);
+
+      @media (min-width: $screen_lg) {
+        color: #fff;
+      }
     }
 
+    @media (min-width: $screen_lg) {
+      display: block;
+      float: left;
+      margin-right: 70px;
+      border-bottom: none;
+      background-color: transparent;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+    }
+
+
     &--active {
-      background-color: shade($blue,15%);
+      color: $pink;
+
+      @media (min-width: $screen_lg) {
+        background-color: transparent;
+      }
+
     }
 
   }
@@ -73,8 +134,28 @@
     display: block;
     padding-top: 17px;
     padding-bottom: 17px;
+    border-bottom: 2px solid rgba(#fff,0); 
     color: #fff;
+    text-decoration: none;
     box-shadow: inset 0 1px rgba(#fff,.15);
+    transition: all .3s;
+
+    @media (min-width: $screen_lg) {
+      padding-top: 13px;
+      padding-bottom: 3px;
+      box-shadow: none;
+
+      &:hover {
+        border-bottom-color: rgba(#fff,1); 
+      }
+
+      &:active {
+        border-bottom-color: rgba(#fff,0);
+        opacity: .3;
+      }
+
+    }
+
   }
 
 }

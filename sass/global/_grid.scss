@@ -1,7 +1,16 @@
 .container {
   @extend %clearfix;
+  position: relative;
   margin: 0 auto;
-  min-width: 320px;
-  max-width: 960px;
+  width: 320px;
   padding: 0 20px;
+
+  @media (min-width: $screen_md) and (max-width: $screen_lg - 1) {
+    width: 660px;
+  }
+
+  @media (min-width: $screen_lg) {
+    width: 980px;
+  }
+
 }  

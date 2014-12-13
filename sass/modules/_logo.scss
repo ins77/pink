@@ -2,4 +2,11 @@
   @extend %hide-text;
   float: left;
   @include use-sprite("logo");
+
+
+
+  @media (min-width: $screen_md) {
+    @include use-sprite("logo-with-glasses");
+  }
+
 }
