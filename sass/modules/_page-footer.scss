@@ -38,19 +38,60 @@
   &__copyright {
     float: right;
     width: 33%;
+    padding-top: 10px;
     text-align: right;
   }
 
   &__copy-link {
-    
+    @extend %hide-text;
+    position: relative;
+    display: inline-block;
+    width: 27px;
+    margin: 0 10px;
+    vertical-align: middle;
+    transition: all .3s;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 27px;
+      opacity: 0;
+      transition: all .3s;
+    }
+
+    &:hover:after {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: .3;
+    }
     
     &--author {
+      height: 30px;
+      background: inline-image("glukhanko.svg") no-repeat 0 0;
+
+      &:after {
+        height: 30px;
+        background: #fff inline-image("glukhanko_hover.svg") no-repeat 0 0;
+      }
 
     }
 
     &--htmlacademy {
+      height: 33px;
+      margin-right: 0;
+      background: inline-image("htmlacademy.svg") no-repeat 0 0;
+
+      &:after {
+        height: 33px;
+        background: #fff inline-image("htmlacademy_hover.svg") no-repeat 0 0;
+      }
 
     }
+
 
   }
 

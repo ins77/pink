@@ -1,12 +1,22 @@
 .logo {
   @extend %hide-text;
   float: left;
-  @include use-sprite("logo");
+  width: 74px;
+  height: 24px;
+  background: inline-image("logo_sm.svg") no-repeat 0 0;
 
+  @media (min-width: $screen_md) and (max-width: $screen_lg - 1) {
+    position: relative;
+    @include use-sprite("logo-with-glasses", true);
 
+    &:hover {
+      @include use-sprite("logo-with-glasses_hover");
+    }
 
-  @media (min-width: $screen_md) {
-    @include use-sprite("logo-with-glasses");
+  }
+
+  @media (min-width: $screen_lg) {
+    @include use-sprite("logo-with-glasses_2");
   }
 
 }

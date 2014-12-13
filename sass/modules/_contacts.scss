@@ -11,7 +11,6 @@
     display: inline-block;
     margin-bottom: 20px;
     vertical-align: top;
-    
 
     @media (min-width: $screen_md) {
       width: 300px;
@@ -20,9 +19,11 @@
       &--left {
         float: left;
       }
+
       &--right {
         float: right;
       }
+
     }
 
   }
@@ -37,7 +38,7 @@
     @media (min-width: $screen_md) {
       margin-bottom: 5px;
     }
-
+    
   }
 
   &__link {
@@ -45,6 +46,23 @@
     color: $pink;
     font-weight: 300;
     text-decoration: none;
+    transition: all .3s;
+
+    &--state {
+      border-bottom: 2px solid rgba($blue,0);
+
+      &:hover {
+        color: $blue;
+        border-bottom-color: rgba($blue,2);
+      }
+
+      &:active {
+        opacity: .3;
+        border-bottom-color: rgba($blue,0);
+      }
+
+    }
+
   }
 
 }

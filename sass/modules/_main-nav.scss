@@ -58,7 +58,7 @@
   }
 
   &__list {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 70px;
     display: none;
@@ -88,7 +88,7 @@
     background-color: $blue;
     transition: all .3s;
 
-    &:hover {
+    &:hover a {
       color: $pink;
 
       @media (min-width: $screen_lg) {
@@ -97,12 +97,13 @@
 
     }
 
-    &:active {
+    &:active a {
       color: rgba($pink,.3);
 
       @media (min-width: $screen_lg) {
         color: #fff;
       }
+      
     }
 
     @media (min-width: $screen_lg) {
@@ -119,10 +120,11 @@
     }
 
 
-    &--active {
+    &--active a {
       color: $pink;
 
       @media (min-width: $screen_lg) {
+        color: #fff;
         background-color: transparent;
       }
 

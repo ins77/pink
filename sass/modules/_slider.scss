@@ -1,49 +1,6 @@
 .slider {
   position: relative;
 
-  &__controls {
-    font-size: 0;
-    text-align: center;
-
-    @media (min-width: $screen_md) {
-
-      &--price {
-        display: none;
-      }
-
-    }
-
-  }
-
-  &__switcher {
-    box-sizing: content-box;
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    margin: 0 3px;
-    border: 3px solid #fff;
-    vertical-align: middle;
-    background-color: $gray-dark;
-    border-radius: 50%;
-    cursor: pointer;
-
-    &--border-gray {
-      border: 3px solid $gray;
-    }
-
-    &:hover {
-      border: 3px solid $blue;
-      background-color: #fff;
-    }
-
-    &--active {
-      border: 3px solid $blue;
-      background-color: #fff;
-    }
-    
-  }
-
-
   @media (min-width: $screen_lg) {
 
     &__arrow {
@@ -66,6 +23,61 @@
         opacity: 1;
       }
 
+    }
+
+  }
+
+  &__controls {
+    font-size: 0;
+    text-align: center;
+
+    @media (min-width: $screen_md) {
+
+      &--price {
+        display: none;
+      }
+
+    }
+
+  }
+
+  &__switcher {
+    box-sizing: content-box;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 3px;
+    border: 3px solid #fff;
+    vertical-align: middle;
+    background-color: rgba($blue,.3);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover {
+      background-color: rgba($blue,.6);
+    }
+
+    &:active {
+      background-color: rgba($blue,.1);
+    }
+
+    &--border-gray {
+      border: 3px solid $gray;
+    }
+
+    &--active {
+      border: 3px solid $blue;
+      background-color: #fff;
+
+      &:hover {
+        background: #fff;
+      }
+
+      &:active {
+        background: #fff;
+      }
+      
     }
 
   }

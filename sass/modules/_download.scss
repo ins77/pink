@@ -23,15 +23,18 @@
   &__icon {
     @extend %hide-text;
     display: inline-block;
+    vertical-align: middle;
     margin-bottom: 15px;
     margin-right: 30px;
+    width: 46px;
+    height: 60px;
 
     @media (min-width: $screen_md) {
       margin-bottom: 25px;
     }
-
+    
     @media (min-width: $screen_lg) {
-      margin-bottom: 45px;
+      margin-bottom: 55px;
     }
 
     &:nth-child(3n) {
@@ -39,15 +42,15 @@
     }
 
     &--apple {
-      @include use-sprite("apple");
+      background: inline-image("apple.svg") no-repeat 50% 100%;
     }
 
     &--android {
-      @include use-sprite("android");
+      background: inline-image("android.svg") no-repeat 50% 80%;
     }
 
     &--windows {
-      @include use-sprite("windows");
+      background: inline-image("windows.svg") no-repeat 50% 80%;
     }
 
   }

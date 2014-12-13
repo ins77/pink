@@ -22,10 +22,19 @@
     border: 3px solid rgba($blue,.1);
     text-decoration: none;
     border-radius: 50%;
+    transition: all .3s;
 
     &:before {
       font-size: $font-size-sm;
       line-height: 45px;
+    }
+
+    &:hover {
+      border-color: rgba($blue,1);
+    }
+
+    &:active {
+      opacity: .1;
     }
 
   }

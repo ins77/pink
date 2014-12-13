@@ -40,17 +40,16 @@
 
 
 // retina images
-@mixin hidpi($ratio: 1.3) {
+@mixin hidpi($ratio: 1.5) {
   @media only screen and (-webkit-min-device-pixel-ratio: $ratio),
   only screen and (min--moz-device-pixel-ratio: $ratio),
   only screen and (-o-min-device-pixel-ratio: #{$ratio}/1),
-  only screen and (min-resolution: #{round($ratio*96)}dpi),
   only screen and (min-resolution: #{$ratio}dppx) {
     @content;
   }
 }
 
-@mixin retina-image($filename, $background-size, $extension: png, $retina-suffix: -2x) {
+@mixin retina-image($filename, $background-size, $extension: png, $retina-big: false, $retina-suffix: -2x, $retina-suffix-big: -3x) {
   background-image: image-url("#{$filename}.#{$extension}");
   width: image-width("#{$filename}.#{$extension}");
   height: image-height("#{$filename}.#{$extension}");
@@ -58,16 +57,11 @@
     background-image: image-url("#{$filename}#{$retina-suffix}.#{$extension}");
     background-size: $background-size;
   }
-}
-
-
-// triangles
-@mixin triangle($size, $point, $color) {
-  $opposite: opposite-position($point);
-  border: $size solid transparent;
-  border-#{$opposite}: $size solid $color;
-  border-#{$point}: 0;
-  width: 0;
-  height: 0;
+  @if $retina-big {
+    @include hidpi(2.5) {
+      background-image: image-url("#{$filename}#{$retina-suffix-big}.#{$extension}");
+      background-size: $background-size;
+    }
+  }
 }
 
