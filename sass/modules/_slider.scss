@@ -30,15 +30,6 @@
   &__controls {
     font-size: 0;
     text-align: center;
-
-    @media (min-width: $screen_md) {
-
-      &--price {
-        display: none;
-      }
-
-    }
-
   }
 
   &__switcher {
@@ -60,10 +51,6 @@
 
     &:active {
       background-color: rgba($blue,.1);
-    }
-
-    &--border-gray {
-      border: 3px solid $gray;
     }
 
     &--active {

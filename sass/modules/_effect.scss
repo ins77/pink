@@ -1,11 +1,11 @@
 .effect {
   display: none;
-  min-height: 415px;
-  padding-top: 55px;
-  padding-bottom: 70px;
   
   @media (min-width: $screen_md) {
     display: block;
+    min-height: 425px;
+    padding-top: 55px;
+    padding-bottom: 70px;
     
     &__content {
       float: right;
@@ -19,7 +19,7 @@
         top: 0;
         width: 262px;
         height: 302px;
-        background: inline-image("timer.png");
+        background: image-url("timer.png");
       }
 
     }
@@ -39,7 +39,7 @@
   }
 
   @media (min-width: $screen_lg) {
-    min-height: 435px;
+    min-height: 445px;
     padding-top: 25px;
     background-color: $gray;
 
@@ -50,7 +50,7 @@
       &:before {
         width: 301px;
         height: 346px;
-        background: inline-image("timer_big.png");
+        background: image-url("timer_big.png");
       }
 
     }

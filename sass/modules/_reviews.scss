@@ -1,34 +1,50 @@
 .reviews {
-  padding-top: 40px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 
   @media (min-width: $screen_md) {
-    padding-top: 15px;
-    padding-bottom: 110px;
+    padding-top: 0;
+  }
 
-    .h2 {
-      display: none;
+  &__item {
+    position: relative;
+
+    @media (min-width: $screen_md) {
+      padding-bottom: 80px;
     }
 
   }
   
   &__title {
-    display: none;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 20px;
     color: #000;
 
     @media (min-width: $screen_md) {
-      display: block;
+      position: absolute;
+      bottom: 30px;
+      width: 100%;
+      margin-bottom: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
   }
 
   &__title-about {
-    display: block;
-    font-size: $font-size-base;
-    font-weight: 400;
-    color: $c_text;
+    display: none;
+
+    @media (min-width: $screen_md) {
+      display: block;
+      font-size: $font-size-base;
+      font-weight: 400;
+      color: $c_text;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
   }
 
   &__text {
@@ -41,9 +57,7 @@
 
     @media (min-width: $screen_lg) {
       position: relative;
-      padding-left: 130px;
-      padding-right: 130px;
-      padding-top: 170px;
+      padding: 160px 130px 0;
     }
 
     &:before {
@@ -53,10 +67,12 @@
         content: "\201c";
         position: absolute;
         left: 50%;
-        top: 50%;
-        font: 240px/36px Georgia, Arial, sans-serif;
+        top: 20px;
+        height: 110px;
+        font: 240px/1 Georgia, Arial, sans-serif;
         color: #efefef;
         transform: translateX(-50%);
+        overflow: hidden;
       }
 
     }

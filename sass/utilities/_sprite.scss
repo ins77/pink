@@ -32,7 +32,7 @@ $sprite-high-res-suffix: '-2x' !default;
              (min-device-pixel-ratio: 2), 
              (min-resolution: 144dppx) {
 
-        background-size: (image-width(sprite-path($sprite-map)) / 2) (image-height(sprite-path($sprite-map)) / 2);
+        background-size: floor(image-width(sprite-path($sprite-map)) / 2) floor(image-height(sprite-path($sprite-map)) / 2);
         background-position: round(nth(sprite-position($sprite-map, $sprite-high-res), 1) / 2) round(nth(sprite-position($sprite-map, $sprite-high-res), 2) / 2);
         height: image-height(sprite-file($sprite-map, $sprite));
         width: image-width(sprite-file($sprite-map, $sprite));

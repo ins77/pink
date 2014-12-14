@@ -1,26 +1,17 @@
 .btn {
   display: block;
   padding: 14px 14px 15px;
-  margin-bottom: 25px;
   border: 3px solid #fff;
   color: #fff;
   font-weight: 700;
   font-size: $font-size-sm;
   text-align: center;
   text-decoration: none;
-  line-height: ($line-height-sm / $font-size-sm);
+  line-height: $line-height-sm;
   background-image: none;
   cursor: pointer;
   border-radius: 30px;
   transition: all .3s;
-
-  @media (min-width: $screen_md) {
-    margin-bottom: 40px;
-  }
-  
-  @media (min-width: $screen_lg) {
-    margin-bottom: 60px;
-  }
 
   &:hover,
   &:focus {

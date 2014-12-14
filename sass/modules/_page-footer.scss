@@ -22,22 +22,26 @@
 
   }
 
+  &__logo-wrap {
+    float: left;
+    width: 220px;
+  }
+
   &__logo {
     @extend %hide-text;
-    float: left;
+    display: block;
     @include use-sprite("logo-footer_700");
-    width: 33%;
 
     @media (min-width: $screen_lg) {
       @include use-sprite("logo-footer_1000");
-      width: 33%;
     }
 
   }
 
+
   &__copyright {
     float: right;
-    width: 33%;
+    width: 220px;
     padding-top: 10px;
     text-align: right;
   }

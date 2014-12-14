@@ -17,7 +17,7 @@
 
 .quote-text {
   margin: 0 0 30px;
-  line-height: ($line-height-md / $font-size-base);
+  line-height: $line-height-md;
   &:before {
     content: "«";
   }
@@ -27,10 +27,10 @@
 }
 
 .h2 {
-  margin-top: 0;
+  margin-bottom: 15px;
   font-size: $font-size-sm;
   font-weight: 700;
-  line-height: ($line-height-base / $font-size-sm);
+  line-height: $line-height-base;
   color: #000;
 
   @media (min-width: $screen_lg) {

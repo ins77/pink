@@ -1,24 +1,24 @@
 .price-table-wrap {
   position: relative;
-  width: 100%;
   min-height: 280px;
-  margin: 0 auto 40px;
+  margin: 0 auto 45px;
   overflow: hidden;
 
-  @media (min-width: $screen_md) and (max-width: $screen_lg - 1) {
+  @media (min-width: $screen_md) {
     min-height: 0;
     margin: 0 auto;
   }
 
 }
 
+
 .price-table {
   position: absolute;
   left: 50%;
-  width: 834px;
+  // width: 834px;
+  width: 270%;
   text-transform: uppercase;
   text-align: left;
-  background-color: #fff;
   transform: translateX(-50%);
 
   @media (min-width: $screen_md) {
@@ -30,6 +30,14 @@
 
   @media (min-width: $screen_lg) {
     width: 940px;
+  }
+
+  tr:first-child {
+    background-color: $blue; // решает некорректное отображение бордюров в firefox
+  }
+
+  tr:nth-child(n+2) {
+    background-color: #fff; // решает некорректное отображение бордюров в firefox
   }
 
   td {
@@ -55,7 +63,7 @@
 
   &__empty {
     border-bottom: 2px solid $gray-light;
-    background-color: $gray;
+    background-color: $gray; // решает некорректное отображение бордюров в firefox
   }
 
 
@@ -67,8 +75,6 @@
     border-right: 2px solid $gray-light;
     color: #fff;
     text-align: center;
-    background-color: $blue;
-    overflow: hidden;
 
     @media (min-width: $screen_md) {
       padding-top: 10px;
@@ -97,7 +103,7 @@
     line-height: $line-height-md;
     font-weight: 700;
 
-    @media (min-width: 680px) and (max-width: 999px) {
+    @media (min-width: $screen_md) and (max-width: $screen_lg - 1) {
       font-size: 16px;
     }
 
@@ -109,7 +115,7 @@
     line-height: $line-height-md;
     font-weight: 300;
 
-    @media (min-width: 680px) and (max-width: 999px) {
+    @media (min-width: $screen_md) and (max-width: $screen_lg - 1) {
       font-size: $font-size-sm;
     }
 
@@ -122,7 +128,7 @@
     border: 2px solid $gray-light;
     border-top: none;
 
-    @media (min-width: 680px) and (max-width: 999px) {
+    @media (min-width: $screen_md) and (max-width: $screen_lg - 1) {
       font-size: 0;
       padding: 10px 15px;
 
@@ -134,7 +140,7 @@
 
     }
 
-    @media (min-width: 1000px) {
+    @media (min-width: $screen_lg) {
       font-size: 0;
       text-transform: none;
 

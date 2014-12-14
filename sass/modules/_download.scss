@@ -5,6 +5,7 @@
   margin: 0 auto;
   padding: 25px 0 30px;
   font-weight: 300; 
+  color: #fff;
 
   @media (min-width: $screen_md) {
     position: absolute;
@@ -51,6 +52,19 @@
 
     &--windows {
       background: inline-image("windows.svg") no-repeat 50% 80%;
+    }
+
+  }
+
+  .btn { 
+    margin-bottom: 25px;
+
+    @media (min-width: $screen_md) and (max-width: $screen_lg - 1) {
+      margin-bottom: 40px;
+    }
+    
+    @media (min-width: $screen_lg) {
+      margin-bottom: 60px;
     }
 
   }
