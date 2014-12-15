@@ -1,7 +1,7 @@
 .price-table-wrap {
   position: relative;
-  min-height: 280px;
-  margin: 0 auto 45px;
+  min-height: 290px;
+  margin: 0 auto 25px;
   overflow: hidden;
 
   @media (min-width: $screen_md) {
@@ -41,12 +41,16 @@
   }
 
   td {
-    width: 278px;
     vertical-align: middle;
 
     @media (min-width: $screen_md) {
       width: 155px;
     }
+
+    @media (min-width: $screen_md) {
+      width: 235px;
+    }
+
 
     &:first-child {
       display: none;
@@ -69,17 +73,18 @@
 
   &__header {
     position: relative;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 16px;
+    padding-bottom: 21px;
     border-left: 2px solid $gray-light;
     border-right: 2px solid $gray-light;
     color: #fff;
     text-align: center;
 
-    @media (min-width: $screen_md) {
-      padding-top: 10px;
-      padding-bottom: 10px;
+    @media (min-width: $screen_md) and (max-width: $screen_lg - 1) {
+      padding-top: 12px;
+      padding-bottom: 7px;
     }
+
 
     &--hit:after {
       content: "";
@@ -89,6 +94,7 @@
       @include use-sprite("hit");
 
       @media (min-width: $screen_md) and (max-width: $screen_lg - 1) {
+        left: 0;
         @include use-sprite("hit_sm");
       }
 
@@ -124,13 +130,13 @@
 
   &__cell {
     position: relative;
-    padding: 20px 68px 17px 22px;
+    padding: 18px 68px 17px 22px;
     border: 2px solid $gray-light;
     border-top: none;
 
     @media (min-width: $screen_md) and (max-width: $screen_lg - 1) {
       font-size: 0;
-      padding: 10px 15px;
+      padding: 10px 15px 11px;
 
       &:first-child {
         font-size: $font-size-base;
@@ -141,6 +147,7 @@
     }
 
     @media (min-width: $screen_lg) {
+      padding-right: 22px;
       font-size: 0;
       text-transform: none;
 
@@ -174,7 +181,7 @@
 
     &--false {
       top: 16px;
-      right: 19px;
+      right: 20px;
       width: 26px;
       height: 26px;
       background: inline-image("no.svg") no-repeat 0 0;

@@ -1,6 +1,6 @@
 .btn {
   display: block;
-  padding: 14px 14px 15px;
+  padding: 14px 14px 17px;
   border: 3px solid #fff;
   color: #fff;
   font-weight: 700;
@@ -12,6 +12,10 @@
   cursor: pointer;
   border-radius: 30px;
   transition: all .3s;
+
+  @media (min-width: $screen_lg) {
+    font-size: $font-size-base + 7px;
+  }
 
   &:hover,
   &:focus {

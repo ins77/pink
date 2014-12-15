@@ -5,13 +5,13 @@
 
     &__arrow {
       position: absolute;
-      top: 48%;
+      top: 50%;
       opacity: .3;
       transition: opacity .3s;
-      @include use-sprite("arrow_left");
 
       &--left {
         left: 0;
+        @include use-sprite("arrow_left");
       }
     
       &--right {
@@ -37,7 +37,7 @@
     display: inline-block;
     width: 6px;
     height: 6px;
-    margin: 0 3px;
+    margin: 0 6px;
     border: 3px solid #fff;
     vertical-align: middle;
     background-color: rgba($blue,.3);

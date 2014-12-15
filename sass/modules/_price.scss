@@ -1,18 +1,21 @@
 .price {
   position: relative;
-  padding-top: 110px;
-  padding-bottom: 50px;
+  padding-top: 97px;
+  padding-bottom: 41px;
   background-color: $gray;
 
   @media (min-width: $screen_md) {
+    padding-top: 84px;
+    padding-bottom: 69px;
+
     .slider__controls {
       display: none;
     }
   }
 
   @media (min-width: $screen_lg) {
-    padding-top: 150px;
-    padding-bottom: 80px;
+    padding-top: 139px;
+    padding-bottom: 113px;
   }
 
 

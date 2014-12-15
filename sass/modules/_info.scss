@@ -1,13 +1,14 @@
 .info {
   position: relative;
-  padding-top: 80px;
-  padding-bottom: 285px;
-  background: $gray image-url("phone_hello.png") no-repeat 50% 110%;
+  padding-top: 85px;
+  padding-bottom: 287px;
+  background: $gray image-url("phone_hello.png") no-repeat 50% 109%;
 
   @media (min-width: $screen_md) {
     background-image: none;
-    padding-bottom: 0;
+    padding-bottom: 7px;
     padding-top: 75px;
+    overflow: hidden;
   }  
 
   @media (min-width: $screen_lg) {
@@ -47,7 +48,7 @@
       &:before {
         content: "";
         position: absolute;
-        bottom: 0;
+        bottom: -7px;
         left: -310px;
         width: image-width("phone_hello_2.png");
         height: image-height("phone_hello_2.png");
@@ -60,7 +61,11 @@
 
   &__item {
     position: relative;
-    margin-bottom: 35px;
+    margin-bottom: 31px;
+
+    @media (min-width: $screen_md) {
+      margin-bottom: 35px;
+    }
 
     @media (min-width: $screen_lg) {
       float: left;
@@ -76,7 +81,7 @@
       &:before {
         content: "";
         display: block;
-        margin-bottom: 25px;
+        margin-bottom: 55px;
         width: image-width("iphone-screen-gray.png");
         height: image-height("iphone-screen-gray.png");
         background: image-url("iphone-screen-gray.png") no-repeat -25px 0;

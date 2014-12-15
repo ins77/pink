@@ -7,14 +7,15 @@
   overflow: hidden;
 
   @media (min-width: $screen_md) {
-    padding-top: 205px;
+    height: 729px;
+    padding-top: 203px;
     background-image: image-url("header_bg_2.jpg");
     background-size: cover;
   }
 
   @media (min-width: $screen_lg) {
     min-height: 854px;
-    padding-top: 220px;
+    padding-top: 218px;
     background-image: image-url("header_bg_3.jpg");
     background-size: cover;
   }
@@ -29,17 +30,17 @@
     height: image-height("header_bg_hand.png");
     background: image-url("header_bg_hand.png") no-repeat 0 0;
 
-    @media (min-width: $screen_md) {
-      position: absolute;
-      right: -15px;
+    @media (min-width: $screen_md) and (max-width: $screen_lg) {
+      right: 40px;
+      bottom: 19px;
       width: image-width("header_bg_hand_2.png");
       height: image-height("header_bg_hand_2.png");
       background: image-url("header_bg_hand_2.png") no-repeat 0 0;
     }
 
     @media (min-width: $screen_lg) {
-      position: absolute;
-      right: -100px;
+      right: -17px;
+      bottom: 8px;
       width: image-width("header_bg_hand_3.png");
       height: image-height("header_bg_hand_3.png");
       background: image-url("header_bg_hand_3.png") no-repeat 0 0;
@@ -59,9 +60,8 @@
       left: 20px;
       z-index: 100;
       width: 300px;
-      margin: 0 0 30px;
-      padding-left: percentage(40px / 700px);
-      padding-right: percentage(40px / 700px);
+      padding-left: 40px;
+      padding-right: 40px;
       font-size: $font-size-xl;
       text-align: center;
     }
