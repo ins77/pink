@@ -1,7 +1,7 @@
 .slider {
   position: relative;
 
-  @media (min-width: $screen_lg) {
+  @media (min-width: $screen-lg) {
 
     &__arrow {
       position: absolute;
@@ -11,12 +11,12 @@
 
       &--left {
         left: 0;
-        @include use-sprite("arrow_left");
+        @include use-sprite("arrow_left", true);
       }
     
       &--right {
         right: 0;
-        @include use-sprite("arrow_right");
+        @include use-sprite("arrow_right", true);
       }
 
       &:hover {

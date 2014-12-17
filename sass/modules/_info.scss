@@ -2,16 +2,17 @@
   position: relative;
   padding-top: 85px;
   padding-bottom: 287px;
-  background: $gray image-url("phone_hello.png") no-repeat 50% 109%;
+  background-color: $gray;
+  overflow: hidden;
 
-  @media (min-width: $screen_md) {
+  @media (min-width: $screen-md) {
     background-image: none;
     padding-bottom: 7px;
     padding-top: 75px;
     overflow: hidden;
   }  
 
-  @media (min-width: $screen_lg) {
+  @media (min-width: $screen-lg) {
     padding-top: 0;
     font-size: $font-size-sm;
     line-height: $line-height-md;
@@ -26,12 +27,26 @@
     height: 35px;
     background-image: linear-gradient(to left top, $gray 50%, #fff 50%); 
 
-    @media (min-width: $screen_md) {
+    @media (min-width: $screen-md) {
       height: 55px;
     }
     
-    @media (min-width: $screen_lg) {
+    @media (min-width: $screen-lg) {
       height: 75px;
+    }
+
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include retina-image(phone_hello, 157px 320px);
+
+    @media (min-width: $screen-md) {
+      display: none;
     }
 
   }
@@ -39,7 +54,7 @@
   &__items {
     text-align: center;
 
-    @media (min-width: $screen_md) and (max-width: $screen_lg - 1) {
+    @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
       position: relative;
       float: right;
       width: 50%;
@@ -50,9 +65,7 @@
         position: absolute;
         bottom: -7px;
         left: -310px;
-        width: image-width("phone_hello_2.png");
-        height: image-height("phone_hello_2.png");
-        background: image-url("phone_hello_2.png") no-repeat 0 0;
+        @include retina-image(phone_hello_2, 268px 481px);
       }
 
     }
@@ -63,11 +76,11 @@
     position: relative;
     margin-bottom: 31px;
 
-    @media (min-width: $screen_md) {
+    @media (min-width: $screen-md) {
       margin-bottom: 35px;
     }
 
-    @media (min-width: $screen_lg) {
+    @media (min-width: $screen-lg) {
       float: left;
       width: 300px;
       margin-right: 20px;
@@ -82,21 +95,16 @@
         content: "";
         display: block;
         margin-bottom: 55px;
-        width: image-width("iphone-screen-gray.png");
-        height: image-height("iphone-screen-gray.png");
-        background: image-url("iphone-screen-gray.png") no-repeat -25px 0;
+        background-position: -25px 0;
+        @include retina-image(iphone-screen-gray, 292px 302px);
       }
 
       &--phone-pink:before {
-        width: image-width("iphone-screen-pink.png");
-        height: image-height("iphone-screen-pink.png");
-        background-image: image-url("iphone-screen-pink.png");
+        @include retina-image(iphone-screen-pink, 292px 302px);
       }
 
       &--phone-smile:before {
-        width: image-width("iphone-screen-smile.png");
-        height: image-height("iphone-screen-smile.png");
-        background-image: image-url("iphone-screen-smile.png");
+        @include retina-image(iphone-screen-smile, 292px 302px);
       }
 
     }

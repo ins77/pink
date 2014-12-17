@@ -8,17 +8,17 @@
     height: 24px;
     background: inline-image("logo_sm.svg") no-repeat 0 0;
 
-    @media (min-width: $screen_md) and (max-width: $screen_lg - 1) {
-      @include use-sprite("logo-with-glasses", true);
+    @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+      @include retina-image(logo_1, 145px 40px);
 
       &:hover {
-        @include use-sprite("logo-with-glasses_hover");
+        @include retina-image(logo_1_hover, 145px 40px);
       }
 
     }
 
-    @media (min-width: $screen_lg) {
-      @include use-sprite("logo-with-glasses_2");
+    @media (min-width: $screen-lg) {
+      @include retina-image(logo_2, 146px 40px);
     }
 
   }

@@ -7,7 +7,7 @@
   font-weight: 300; 
   color: #fff;
 
-  @media (min-width: $screen_md) {
+  @media (min-width: $screen-md) {
     position: absolute;
     left: 20px;
     top: 175px;
@@ -17,7 +17,7 @@
     font-size: $font-size-sm;
   }
 
-  @media (min-width: $screen_lg) {
+  @media (min-width: $screen-lg) {
     top: 232px;
   }
 
@@ -30,11 +30,11 @@
     width: 46px;
     height: 60px;
 
-    @media (min-width: $screen_md) {
+    @media (min-width: $screen-md) {
       margin-bottom: 36px;
     }
     
-    @media (min-width: $screen_lg) {
+    @media (min-width: $screen-lg) {
       margin-bottom: 55px;
     }
 
@@ -59,11 +59,11 @@
   .btn { 
     margin-bottom: 29px;
 
-    @media (min-width: $screen_md) and (max-width: $screen_lg - 1) {
+    @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
       margin-bottom: 43px;
     }
     
-    @media (min-width: $screen_lg) {
+    @media (min-width: $screen-lg) {
       margin-bottom: 64px;
     }
 

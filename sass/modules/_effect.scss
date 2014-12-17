@@ -1,7 +1,7 @@
 .effect {
   display: none;
   
-  @media (min-width: $screen_md) {
+  @media (min-width: $screen-md) {
     display: block;
     min-height: 425px;
     padding-top: 55px;
@@ -19,7 +19,25 @@
         top: 0;
         width: 262px;
         height: 302px;
-        background: image-url("timer.png");
+        background: image-url("timer.svg") no-repeat;
+      }
+
+      &:after {
+        content: "24";
+        position: absolute;
+        left: 43px;
+        top: 65px;
+        width: 214px;
+        height: 214px;
+        padding-top: 38px;
+        padding-left: 33px;
+        border: 11px solid $pink;
+        font-size: 105px;
+        line-height: 1;
+        font-weight: 700;
+        color: $pink;
+        background-color: #eee;
+        border-radius: 50%;
       }
 
     }
@@ -37,7 +55,7 @@
 
   }
 
-  @media (min-width: $screen_lg) {
+  @media (min-width: $screen-lg) {
     min-height: 435px;
     padding-top: 25px;
     padding-bottom: 65px;
@@ -50,7 +68,18 @@
       &:before {
         width: 301px;
         height: 346px;
-        background: image-url("timer_big.png");
+        background: image-url("timer_big.svg") no-repeat;
+      }
+
+      &:after {
+        left: 45px;
+        top: 70px;
+        width: 247px;
+        height: 247px;
+        padding-top: 45px;
+        padding-left: 40px;
+        border: 13px solid $pink;
+        font-size: 120px;
       }
 
     }

@@ -2,27 +2,41 @@
   position: relative;
   z-index: 100;
   padding-top: 43px;
-  padding-bottom: 12px;
   font-size: 0;
   text-align: center;
   background-color: #fff;
 
-  @media (min-width: $screen_md) and (max-width: $screen_lg - 1) {
-    padding-bottom: 18px;
-  }
+  // &:after {
+  //   content: "";
+  //   position: absolute;
+  //   bottom: -65px;
+  //   left: 50%;
+  //   z-index: -1; // не будет ли проблем с отрицательным значением z-index?
+  //   transform: translateX(-50%);
+  //   width: 0;
+  //   height: 0;
+  //   border-style: solid;
+  //   border-width: 124px 600px 0 600px;
+  //   border-color: #fff transparent transparent transparent;
 
-  @media (min-width: $screen_lg) {
-    padding-bottom: 0;
-  }
+  //   @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+  //     bottom: -103px;
+  //   }
+
+  //   @media (min-width: $screen-lg) {
+  //     bottom: -124px;
+  //   }
+
+  // }
 
   .title-text {
     margin-bottom: 37px;
 
-    @media (min-width: $screen_md) and (max-width: $screen_lg - 1) {
+    @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
       margin-bottom: 47px;
     }
 
-    @media (min-width: $screen_lg) {
+    @media (min-width: $screen-lg) {
       margin-bottom: 60px;
     }
 
@@ -33,7 +47,11 @@
     margin-bottom: 18px;
     vertical-align: top;
 
-    @media (min-width: $screen_md) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $screen-md) {
       width: 300px;
       margin-bottom: 45px;
 
@@ -45,13 +63,9 @@
         float: right;
       }
 
-      &:last-child {
-        margin-bottom: 0;
-      }
-
     }
 
-    @media (min-width: $screen_lg) {
+    @media (min-width: $screen-lg) {
       margin-bottom: 0;
     }
 
@@ -65,11 +79,11 @@
     font-weight: 700;
     color: $blue;
 
-    @media (min-width: $screen_md) and (max-width: $screen_lg - 1) {
+    @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
       margin-bottom: 5px;
     }
 
-    @media (min-width: $screen_lg) {
+    @media (min-width: $screen-lg) {
       margin-bottom: 28px;
     }
     
