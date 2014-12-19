@@ -9,24 +9,24 @@
   </head>
   <body>
       
-    <header class="page-header">
+    <header class="page-header" id="navinfo">
         
       <nav class="main-nav">   <!-- add .main-nav--active for active version -->
         <div class="container">
           <h1 class="logo"><a class="logo__link" href="index.html">Pink</a></h1>
-          <a class="main-nav__toggle" href="#"></a>
+          <a class="main-nav__toggle" href="#"></a>   <!-- main-nav__toggle--active -->
           <ul class="main-nav__list">
             <li class="main-nav__item  main-nav__item--active">
-              <a href="#" class="main-nav__link">Информация</a>
+              <a href="#navinfo" class="main-nav__link">Информация</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Возможности</a>
+              <a href="#navfeatures" class="main-nav__link">Возможности</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Отзывы</a>
+              <a href="#navreviews" class="main-nav__link">Отзывы</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Стоимость</a>
+              <a href="#navprice" class="main-nav__link">Стоимость</a>
             </li>
           </ul>
         </div>
@@ -61,7 +61,7 @@
       </div>
     </div>
 
-    <section class="info">
+    <section class="info" id="navfeatures">
 
       <div class="container">
 
@@ -97,7 +97,7 @@
     </section>
     
 
-    <div class="reviews">
+    <div class="reviews" id="navreviews">
 
       <div class="container">
       
@@ -145,7 +145,7 @@
     <!-- /.reviews -->
 
 
-    <div class="price">
+    <div class="price" id="navprice">
 
       <div class="slider  slider--price">
         <div class="price-table-wrap">
@@ -258,6 +258,8 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script>
+    <script src="js/lib/tap.min.js"></script>
     <script src="js/main.js"></script>
     <script>
       $(function() {
