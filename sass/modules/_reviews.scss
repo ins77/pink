@@ -1,0 +1,116 @@
+.reviews {
+  padding-top: 45px;
+  padding-bottom: 30px;
+
+  @media (min-width: $screen-md) and (max-width: $screen-lg) {
+    padding-top: 8px;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding-top: 0;
+    padding-bottom: 20px;
+
+    .slider__switcher {
+      display: none;
+    }
+
+  }
+
+  &__item {
+    position: relative;
+
+    @media (min-width: $screen-md) {
+      padding-bottom: 80px;
+    }
+
+  }
+  
+  &__title {
+    margin-bottom: 17px;
+    font-size: $font-size-sm;
+    color: #000;
+
+    @media (min-width: $screen-md) {
+      position: absolute;
+      bottom: 30px;
+      width: 100%;
+      margin-bottom: 0;
+      font-size: $font-size-sm + 2;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: $font-size-md;
+      line-height: $line-height-md;
+    }
+
+  }
+
+  &__title-about {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: block;
+      margin-top: 8px;
+      font-size: $font-size-base;
+      font-weight: 400;
+      color: $c_text;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-top: 2px;
+      font-size: $font-size-sm;
+    }
+
+  }
+
+  &__text {
+    margin: 0 0 26px;
+    line-height: $line-height-md;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 44px;
+      font-size: $font-size-sm;
+    }
+
+    @media (min-width: $screen-lg) {
+      position: relative;
+      margin-bottom: 48px;
+      padding: 186px 130px 0;
+    }
+
+    &:before {
+      content: "«";
+
+      @media (min-width: $screen-lg) {
+        content: "\201c";
+        position: absolute;
+        left: 50%;
+        top: 50px;
+        height: 110px;
+        font: 240px/1 Georgia, Arial, sans-serif;
+        color: #efefef;
+        transform: translateX(-50%);
+        overflow: hidden;
+      }
+
+    }
+
+    &:after {
+      content: "»";
+
+      @media (min-width: $screen-lg) {
+        display: none;
+      }
+
+    }
+
+  }
+
+}

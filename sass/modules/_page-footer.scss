@@ -1,8 +1,141 @@
 .page-footer {
 
   &__map {
+    position: relative;
     width: 100%; 
     height: 220px;
+
+    @media (min-width: $screen-md) {
+      height: 380px;
+    }
+
+    @media (min-width: $screen-lg) {
+      height: 511px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -60px;
+      left: 50%;
+      z-index: 100;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 124px 720px 0 720px;
+      border-color: #fff transparent transparent transparent;
+
+      @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+        top: -35px;
+      }
+
+      @media (min-width: $screen-lg) {
+        top: 0;
+      }
+
+    }
+
+  }
+
+  &__info {
+    display: none;
+    width: 100%;
+
+    @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+      display: block;
+      min-height: 127px;
+      padding-top: 37px;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: block;
+      min-height: 197px;
+      padding-top: 74px;
+    }
+
+  }
+
+  &__logo-wrap {
+    float: left;
+    width: 220px;
+  }
+
+  &__logo {
+    @extend %hide-text;
+    display: block;
+    @include retina-image(logo_3, 145px 40px);
+
+    @media (min-width: $screen-lg) {
+      @include retina-image(logo_4, 146px 40px);
+    }
+
+  }
+
+
+  &__copyright {
+    float: right;
+    width: 220px;
+    padding-top: 10px;
+    text-align: right;
+
+    @media (min-width: $screen-lg) {
+      font-size: $font-size-sm;
+    }
+
+  }
+
+  &__copy-link {
+    @extend %hide-text;
+    position: relative;
+    display: inline-block;
+    width: 27px;
+    margin: 0 8px;
+    vertical-align: middle;
+    transition: all .3s;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 27px;
+      opacity: 0;
+      transition: all .3s;
+    }
+
+    &:hover:after {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: .3;
+    }
+    
+    &--author {
+      height: 30px;
+      background: inline-image("glukhanko.svg") no-repeat 0 0;
+
+      &:after {
+        height: 30px;
+        background: #fff inline-image("glukhanko_hover.svg") no-repeat 0 0;
+      }
+
+    }
+
+    &--htmlacademy {
+      height: 33px;
+      margin-right: 0;
+      background: inline-image("htmlacademy.svg") no-repeat 0 0;
+
+      &:after {
+        height: 33px;
+        background: #fff inline-image("htmlacademy_hover.svg") no-repeat 0 0;
+      }
+
+    }
+
+
   }
 
 }

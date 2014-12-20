@@ -1,0 +1,104 @@
+.effect {
+  display: none;
+  
+  @media (min-width: $screen-md) {
+    display: block;
+    min-height: 425px;
+    padding-top: 55px;
+    padding-bottom: 70px;
+    
+    &__content {
+      float: right;
+      width: 50%;
+      text-align: left;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 20px;
+        top: 0;
+        width: 262px;
+        height: 302px;
+        background: image-url("timer.svg") no-repeat;
+      }
+
+      &:after {
+        content: "24";
+        position: absolute;
+        left: 43px;
+        top: 65px;
+        width: 214px;
+        height: 214px;
+        padding-top: 38px;
+        padding-left: 33px;
+        border: 11px solid $pink;
+        font-size: 105px;
+        line-height: 1;
+        font-weight: 700;
+        color: $pink;
+        background-color: #eee;
+        border-radius: 50%;
+      }
+
+    }
+
+    &__title {
+      padding: 41px 220px 10px 0;
+      font-size: $font-size-lg;
+      line-height: $line-height-xl;
+      color: #000;
+    }
+
+    &__text {
+      margin-bottom: 10px;
+    }
+
+  }
+
+  @media (min-width: $screen-lg) {
+    min-height: 435px;
+    padding-top: 25px;
+    padding-bottom: 65px;
+    background-color: $gray;
+
+    &__content {
+      width: 572px;
+      padding-top: 70px;
+
+      &:before {
+        width: 301px;
+        height: 346px;
+        background: image-url("timer_big.svg") no-repeat;
+      }
+
+      &:after {
+        left: 45px;
+        top: 70px;
+        width: 247px;
+        height: 247px;
+        padding-top: 45px;
+        padding-left: 40px;
+        border: 13px solid $pink;
+        font-size: 120px;
+      }
+
+    }
+
+    &__title {
+      padding: 20px 100px 21px 0;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+      font-size: $font-size-sm;
+      line-height: $line-height-md;
+    }
+
+    a {
+      font-size: $font-size-sm;
+      line-height: $line-height-md;
+    }
+
+  }
+
+}

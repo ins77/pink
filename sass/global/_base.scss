@@ -1,8 +1,3 @@
-// base styles
-* {
-  @include selection(#fff, #000);
-}
-
 *,
 *:before,
 *:after {
@@ -12,16 +7,22 @@
 body {
   min-width: 320px;
   margin: 0 auto;
-  font: 400 #{$font-size-base}/($line-height-base / $font-size-base) $font-family-base;
+  font: 400 #{$font-size-base}/#{$line-height-base} $font-family-base;
   color: $c_text;
   text-align: center;
 }
 
 a {
-  text-decoration: none;
+  color: $pink;
+  
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+
 }
 
-p {
+p, h2 {
   margin: 0;
 }
 
@@ -31,7 +32,6 @@ ul {
   padding: 0;
   list-style-type: none;
 }
-
 
 img {
   max-width: 100%;

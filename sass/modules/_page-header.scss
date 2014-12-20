@@ -2,20 +2,42 @@
   position: relative;
   min-height: 729px;
   padding-top: 87px;
-  background: $blue image-url("header_bg.jpg") no-repeat 50% 0;
   color: #fff;
+  background: $blue image-url("header_bg.jpg") no-repeat 50% 0;
   overflow: hidden;
 
-  &__hand-img {
-    width: 320px;
-    margin: 0 auto;
+  @media (min-width: $screen-md) {
+    height: 729px;
+    padding-top: 203px;
+    background-image: image-url("header_bg_2.jpg");
+    background-size: cover;
+  }
 
-    &:after {
-      content: "";
-      display: block;
-      width: image-width("header_bg_hand.png");
-      height: image-height("header_bg_hand.png");
-      background: image-url("header_bg_hand.png") no-repeat 0 0;
+  @media (min-width: $screen-lg) {
+    min-height: 854px;
+    padding-top: 218px;
+    background-image: image-url("header_bg_3.jpg");
+    background-size: cover;
+  }
+
+  &__hand-img {
+    content: "";
+    position: relative;
+    right: 30px;
+    display: block;
+    margin: 0 auto;
+    @include retina-image(header_bg_hand, 258px 286px, png, true);
+
+    @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+      right: 40px;
+      bottom: 19px;
+      @include retina-image(header_bg_hand_2, 700px 545px);
+    }
+
+    @media (min-width: $screen-lg) {
+      right: -17px;
+      bottom: 8px;
+      @include retina-image(header_bg_hand_3, 1050px 645px);
     }
 
   }
@@ -26,6 +48,23 @@
     font-size: $font-size-md;
     line-height: $line-height-auto;
     font-weight: 300;
+
+    @media (min-width: $screen-md) {
+      position: absolute;
+      left: 20px;
+      z-index: 100;
+      width: 300px;
+      padding-left: 40px;
+      padding-right: 40px;
+      font-size: $font-size-xl;
+      text-align: center;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding: 0;
+      font-size: $font-size-xxl;
+    }
+
   }
 
 }
