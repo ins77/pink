@@ -1,7 +1,7 @@
 .effect {
   display: none;
   
-  @media (min-width: $screen-md) {
+  @include tablet {
     display: block;
     min-height: 425px;
     padding-top: 55px;
@@ -19,7 +19,7 @@
         top: 0;
         width: 262px;
         height: 302px;
-        background: image-url("timer.svg") no-repeat;
+        background: inline-image("timer.svg") no-repeat;
       }
 
       &:after {
@@ -55,7 +55,7 @@
 
   }
 
-  @media (min-width: $screen-lg) {
+  @include desktop {
     min-height: 435px;
     padding-top: 25px;
     padding-bottom: 65px;
@@ -68,7 +68,7 @@
       &:before {
         width: 301px;
         height: 346px;
-        background: image-url("timer_big.svg") no-repeat;
+        background: inline-image("timer_big.svg") no-repeat;
       }
 
       &:after {

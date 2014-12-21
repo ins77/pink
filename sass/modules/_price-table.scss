@@ -4,7 +4,7 @@
   margin: 0 auto 25px;
   overflow: hidden;
 
-  @media (min-width: $screen-md) {
+  @include tablet-only {
     min-height: 0;
     margin: 0;
   }
@@ -21,14 +21,14 @@
   text-align: left;
   transform: translateX(-50%);
 
-  @media (min-width: $screen-md) {
+  @include tablet-only {
     position: static;
     width: 620px;
     margin: 0 auto;
     transform: none;
   }
 
-  @media (min-width: $screen-lg) {
+  @include desktop {
     width: 940px;
   }
 
@@ -43,11 +43,11 @@
   td {
     vertical-align: middle;
 
-    @media (min-width: $screen-md) {
+    @include tablet-only {
       width: 155px;
     }
 
-    @media (min-width: $screen-md) {
+    @include tablet-only {
       width: 235px;
     }
 
@@ -55,7 +55,7 @@
     &:first-child {
       display: none;
 
-      @media (min-width: $screen-md) {
+      @include tablet-only {
         display: table-cell;
         border-right: none;
       }
@@ -80,7 +80,7 @@
     color: #fff;
     text-align: center;
 
-    @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+    @include tablet-only {
       padding-top: 12px;
       padding-bottom: 7px;
     }
@@ -93,7 +93,7 @@
       left: -2px;
       @include use-sprite("hit");
 
-      @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+      @include tablet-only {
         left: 0;
         @include use-sprite("hit_sm");
       }
@@ -109,7 +109,7 @@
     line-height: $line-height-md;
     font-weight: 700;
 
-    @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+    @include tablet-only {
       font-size: 16px;
     }
 
@@ -121,7 +121,7 @@
     line-height: $line-height-md;
     font-weight: 300;
 
-    @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+    @include tablet-only {
       font-size: $font-size-sm;
     }
 
@@ -134,7 +134,7 @@
     border: 2px solid $gray-light;
     border-top: none;
 
-    @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+    @include tablet-only {
       font-size: 0;
       padding: 10px 15px 11px;
 
@@ -146,7 +146,7 @@
 
     }
 
-    @media (min-width: $screen-lg) {
+    @include desktop {
       padding-right: 22px;
       font-size: 0;
       text-transform: none;

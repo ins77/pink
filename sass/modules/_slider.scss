@@ -1,7 +1,7 @@
 .slider {
   position: relative;
 
-  @media (min-width: $screen-lg) {
+  @include desktop {
 
     &__arrow {
       position: absolute;

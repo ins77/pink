@@ -5,11 +5,11 @@
     width: 100%; 
     height: 220px;
 
-    @media (min-width: $screen-md) {
+    @include tablet-only {
       height: 380px;
     }
 
-    @media (min-width: $screen-lg) {
+    @include desktop {
       height: 511px;
     }
 
@@ -26,11 +26,11 @@
       border-width: 124px 720px 0 720px;
       border-color: #fff transparent transparent transparent;
 
-      @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+      @include tablet-only {
         top: -35px;
       }
 
-      @media (min-width: $screen-lg) {
+      @include desktop {
         top: 0;
       }
 
@@ -42,13 +42,13 @@
     display: none;
     width: 100%;
 
-    @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+    @include tablet-only {
       display: block;
       min-height: 127px;
       padding-top: 37px;
     }
 
-    @media (min-width: $screen-lg) {
+    @include desktop {
       display: block;
       min-height: 197px;
       padding-top: 74px;
@@ -66,7 +66,7 @@
     display: block;
     @include retina-image(logo_3, 145px 40px);
 
-    @media (min-width: $screen-lg) {
+    @include desktop {
       @include retina-image(logo_4, 146px 40px);
     }
 
@@ -79,7 +79,7 @@
     padding-top: 10px;
     text-align: right;
 
-    @media (min-width: $screen-lg) {
+    @include desktop {
       font-size: $font-size-sm;
     }
 

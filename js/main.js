@@ -9,7 +9,7 @@
   var linkReviews = document.querySelector('.js-link-reviews');
   var linkPrice = document.querySelector('.js-link-price');
 
-  hamburger.addEventListener('tap', function(event) {
+  hamburger.addEventListener('click', function(event) {
     event.preventDefault();
     hamburger.classList.toggle('main-nav__toggle--active');
     nav.classList.toggle('main-nav--active');

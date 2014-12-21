@@ -574,25 +574,24 @@ img {
 
 .page-header {
   position: relative;
-  min-height: 729px;
+  height: 729px;
   padding-top: 87px;
   color: #fff;
-  background: #283645 url('../img/header_bg.jpg?1417772399') no-repeat 50% 0;
+  background: #283645 url('../img/header_bg.jpg?1419104652') no-repeat 50% 0;
   overflow: hidden;
 }
-@media (min-width: 680px) {
+@media (min-width: 680px) and (max-width: 999px) {
   .page-header {
-    height: 729px;
     padding-top: 203px;
-    background-image: url('../img/header_bg_2.jpg?1416306860');
+    background-image: url('../img/header_bg_2.jpg?1419104652');
     background-size: cover;
   }
 }
 @media (min-width: 1000px) {
   .page-header {
-    min-height: 854px;
+    height: 854px;
     padding-top: 218px;
-    background-image: url('../img/header_bg_3.jpg?1416307174');
+    background-image: url('../img/header_bg_3.jpg?1419104652');
     background-size: cover;
   }
 }
@@ -602,19 +601,19 @@ img {
   right: 30px;
   display: block;
   margin: 0 auto;
-  background-image: url('../img/header_bg_hand.png?1418886429');
+  background-image: url('../img/header_bg_hand.png?1419104653');
   width: 258px;
   height: 286px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (-o-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
   .page-header__hand-img {
-    background-image: url('../img/header_bg_hand-2x.png?1418886446');
+    background-image: url('../img/header_bg_hand-2x.png?1419104652');
     background-size: 258px 286px;
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min--moz-device-pixel-ratio: 2.5), only screen and (-o-min-device-pixel-ratio: 2.5 / 1), only screen and (-o-min-device-pixel-ratio: 2.5), only screen and (min-resolution: 2.5dppx) {
   .page-header__hand-img {
-    background-image: url('../img/header_bg_hand-3x.png?1418886449');
+    background-image: url('../img/header_bg_hand-3x.png?1419104652');
     background-size: 258px 286px;
   }
 }
@@ -622,14 +621,14 @@ img {
   .page-header__hand-img {
     right: 40px;
     bottom: 19px;
-    background-image: url('../img/header_bg_hand_2.png?1418886431');
+    background-image: url('../img/header_bg_hand_2.png?1419104653');
     width: 700px;
     height: 545px;
   }
 }
 @media only screen and (min-width: 680px) and (max-width: 999px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 680px) and (max-width: 999px) and (min--moz-device-pixel-ratio: 1.5), only screen and (min-width: 680px) and (max-width: 999px) and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-width: 680px) and (max-width: 999px) and (-o-min-device-pixel-ratio: 1.5), only screen and (min-width: 680px) and (max-width: 999px) and (min-resolution: 1.5dppx) {
   .page-header__hand-img {
-    background-image: url('../img/header_bg_hand_2-2x.png?1418886436');
+    background-image: url('../img/header_bg_hand_2-2x.png?1419104653');
     background-size: 700px 545px;
   }
 }
@@ -638,14 +637,14 @@ img {
   .page-header__hand-img {
     right: -17px;
     bottom: 8px;
-    background-image: url('../img/header_bg_hand_3.png?1418886438');
+    background-image: url('../img/header_bg_hand_3.png?1419104653');
     width: 1050px;
     height: 645px;
   }
 }
 @media only screen and (min-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1000px) and (min--moz-device-pixel-ratio: 1.5), only screen and (min-width: 1000px) and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-width: 1000px) and (-o-min-device-pixel-ratio: 1.5), only screen and (min-width: 1000px) and (min-resolution: 1.5dppx) {
   .page-header__hand-img {
-    background-image: url('../img/header_bg_hand_3-2x.png?1418886445');
+    background-image: url('../img/header_bg_hand_3-2x.png?1419104653');
     background-size: 1050px 645px;
   }
 }
@@ -687,20 +686,20 @@ img {
 }
 @media (min-width: 680px) and (max-width: 999px) {
   .logo a {
-    background-image: url('../img/logo_1.png?1418886425');
+    background-image: url('../img/logo_1.png?1419104653');
     width: 145px;
     height: 40px;
   }
 }
 @media only screen and (min-width: 680px) and (max-width: 999px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 680px) and (max-width: 999px) and (min--moz-device-pixel-ratio: 1.5), only screen and (min-width: 680px) and (max-width: 999px) and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-width: 680px) and (max-width: 999px) and (-o-min-device-pixel-ratio: 1.5), only screen and (min-width: 680px) and (max-width: 999px) and (min-resolution: 1.5dppx) {
   .logo a {
-    background-image: url('../img/logo_1-2x.png?1418886425');
+    background-image: url('../img/logo_1-2x.png?1419104653');
     background-size: 145px 40px;
   }
 }
 @media (min-width: 680px) and (max-width: 999px) {
   .logo a:hover {
-    background-image: url('../img/logo_1_hover.png?1418886425');
+    background-image: url('../img/logo_1_hover.png?1419104653');
     width: 145px;
     height: 40px;
   }
@@ -714,14 +713,14 @@ img {
 
 @media (min-width: 1000px) {
   .logo a {
-    background-image: url('../img/logo_2.png?1418886425');
+    background-image: url('../img/logo_2.png?1419104653');
     width: 146px;
     height: 40px;
   }
 }
 @media only screen and (min-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1000px) and (min--moz-device-pixel-ratio: 1.5), only screen and (min-width: 1000px) and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-width: 1000px) and (-o-min-device-pixel-ratio: 1.5), only screen and (min-width: 1000px) and (min-resolution: 1.5dppx) {
   .logo a {
-    background-image: url('../img/logo_2-2x.png?1418886426');
+    background-image: url('../img/logo_2-2x.png?1419104653');
     background-size: 146px 40px;
   }
 }
@@ -865,13 +864,13 @@ img {
   bottom: -40px;
   left: 50%;
   transform: translateX(-50%);
-  background-image: url('../img/phone_hello.png?1418886426');
+  background-image: url('../img/phone_hello.png?1419104653');
   width: 157px;
   height: 320px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (-o-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
   .info:after {
-    background-image: url('../img/phone_hello-2x.png?1418886429');
+    background-image: url('../img/phone_hello-2x.png?1419104653');
     background-size: 157px 320px;
   }
 }
@@ -895,14 +894,14 @@ img {
     position: absolute;
     bottom: -7px;
     left: -310px;
-    background-image: url('../img/phone_hello_2.png?1418886427');
+    background-image: url('../img/phone_hello_2.png?1419104653');
     width: 268px;
     height: 481px;
   }
 }
 @media only screen and (min-width: 680px) and (max-width: 999px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 680px) and (max-width: 999px) and (min--moz-device-pixel-ratio: 1.5), only screen and (min-width: 680px) and (max-width: 999px) and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-width: 680px) and (max-width: 999px) and (-o-min-device-pixel-ratio: 1.5), only screen and (min-width: 680px) and (max-width: 999px) and (min-resolution: 1.5dppx) {
   .info__items:before {
-    background-image: url('../img/phone_hello_2-2x.png?1418886428');
+    background-image: url('../img/phone_hello_2-2x.png?1419104653');
     background-size: 268px 481px;
   }
 }
@@ -932,40 +931,40 @@ img {
     display: block;
     margin-bottom: 55px;
     background-position: -25px 0;
-    background-image: url('../img/iphone-screen-gray.png?1418886423');
+    background-image: url('../img/iphone-screen-gray.png?1419104653');
     width: 292px;
     height: 302px;
   }
 }
 @media only screen and (min-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1000px) and (min--moz-device-pixel-ratio: 1.5), only screen and (min-width: 1000px) and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-width: 1000px) and (-o-min-device-pixel-ratio: 1.5), only screen and (min-width: 1000px) and (min-resolution: 1.5dppx) {
   .info__item:before {
-    background-image: url('../img/iphone-screen-gray-2x.png?1418886423');
+    background-image: url('../img/iphone-screen-gray-2x.png?1419104653');
     background-size: 292px 302px;
   }
 }
 @media (min-width: 1000px) {
   .info__item--phone-pink:before {
-    background-image: url('../img/iphone-screen-pink.png?1418886423');
+    background-image: url('../img/iphone-screen-pink.png?1419104653');
     width: 292px;
     height: 302px;
   }
 }
 @media only screen and (min-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1000px) and (min--moz-device-pixel-ratio: 1.5), only screen and (min-width: 1000px) and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-width: 1000px) and (-o-min-device-pixel-ratio: 1.5), only screen and (min-width: 1000px) and (min-resolution: 1.5dppx) {
   .info__item--phone-pink:before {
-    background-image: url('../img/iphone-screen-pink-2x.png?1418886424');
+    background-image: url('../img/iphone-screen-pink-2x.png?1419104653');
     background-size: 292px 302px;
   }
 }
 @media (min-width: 1000px) {
   .info__item--phone-smile:before {
-    background-image: url('../img/iphone-screen-smile.png?1418886424');
+    background-image: url('../img/iphone-screen-smile.png?1419104653');
     width: 292px;
     height: 302px;
   }
 }
 @media only screen and (min-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1000px) and (min--moz-device-pixel-ratio: 1.5), only screen and (min-width: 1000px) and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-width: 1000px) and (-o-min-device-pixel-ratio: 1.5), only screen and (min-width: 1000px) and (min-resolution: 1.5dppx) {
   .info__item--phone-smile:before {
-    background-image: url('../img/iphone-screen-smile-2x.png?1418886425');
+    background-image: url('../img/iphone-screen-smile-2x.png?1419104653');
     background-size: 292px 302px;
   }
 }
@@ -992,7 +991,7 @@ img {
     top: 0;
     width: 262px;
     height: 302px;
-    background: url('../img/timer.svg?1418886491') no-repeat;
+    background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAuNjQ0IiBoZWlnaHQ9IjMwMS44MzUiIHZpZXdCb3g9IjAgMCAyNjAuNjQ0IDMwMS44MzUiIGZpbGw9IiNlZWUiPjxwYXRoIGQ9Ik0yNTYuMzE3IDEzOC4xNzZjLTQuNzYtMTguMDY3LTEzLjI5Mi0zNC42MDQtMjQuNzI5LTQ4LjcwN2w3LjQ5NC03LjQ5YzUuMzEyLTUuMzE0IDUuMzEyLTEzLjkzMSAwLTE5LjI0MS0yLjkxNi0yLjkyMS02LjgwNS00LjA3Mi0xMC42MDktMy43ODktMy4xNDQuMjIzLTYuMjQ5IDEuMzk2LTguNjI5IDMuNzg5bC03LjQ4OSA3LjQ4N2MtNy45NDQtNi40MzMtMTYuNjg4LTExLjg1NC0yNi4wMDctMTYuMjkyLTguNDEyLTMuOTg1LTE3LjI3NS03LjE2Ny0yNi41MzUtOS4zMzJsLS4yNzEtLjAzMmMtNC4wMTMtLjkzMy04LjA1Mi0xLjczNi0xMi4yMTMtMi4yODZ2LTguMjU2aDYuMDE3YzkuMzkyIDAgMTcuMDA5LTcuNjE4IDE3LjAwOS0xNy4wMzIgMC05LjM4LTcuNjE3LTE2Ljk5NC0xNy4wMDktMTYuOTk0aC00Ny4wODRjLTEuNDk5IDAtMi45MzYuMjUzLTQuMzM5LjYwOWwtLjAxNy4wMjVjLTcuMjgyIDEuOTI2LTEyLjY1IDguNDk3LTEyLjY1IDE2LjM1OSAwIDkuNDE0IDcuNjE4IDE3LjAzMiAxNy4wMDYgMTcuMDMyaDcuMDUydjguMjU2Yy00My44MDkgNS43MTUtODAuNjU5IDMzLjIzMi05OS41ODQgNzEuMjM4LTMuNzc4IDcuNTcyLTYuOTAzIDE1LjUyMS05LjE0NCAyMy44MjMtMi45NzIgMTAuODk1LTQuNTg2IDIyLjMyNi00LjU4NiAzNC4xNjQgMCA1Ni4zNDIgMzUuODE4IDEwNC4yMjEgODUuOTEyIDEyMi40MDIgMTMuODgyIDUuMDE2IDI4Ljc5NiA3LjkyNiA0NC40MDggNy45MjYgNi41MDMgMCAxMi44ODktLjQ4OSAxOS4xMTItMS40MjkuNjY3LS4wODQgMS4yOTktLjI4MSAxLjk3LS4zOTQgMTguMzM3LTMuMDAyIDM1LjQ0Ny05Ljc3MSA1MC4zNzUtMTkuNTg1IDIwLjYxNy0xMy41NTQgMzcuMDY1LTMyLjc2OCA0Ny4zMDItNTUuNDQyIDcuMzY3LTE2LjM1NiAxMS41NjQtMzQuMzk2IDExLjU2NC01My40NzkuMDAxLTExLjUxNy0xLjUwOC0yMi42ODMtNC4zMjYtMzMuMzN6bS01Ny45MDggMTAxLjQyNmMtMTIuNDE1IDEyLjQxMS0yNy42MjIgMjAuODg0LTQ0LjIwNCAyNS4xMzMtNS42ODYgMS40MjItMTEuNTk1IDIuMTk0LTE3LjU1MiAyLjU5NC0uODUuMDUzLTEuNjQ1LjIwMS0yLjQ4OC4yMTEtMS4yOS4wNjMtMi41NTEuMjYxLTMuODQ1LjI2MS0zLjUzNyAwLTcuMDUzLS4yMjgtMTAuNTI1LS42MDMtMjEuNzQzLTIuMzU4LTQxLjg4My0xMS45MDMtNTcuNTcyLTI3LjU5Ni0xOC4xODgtMTguMTg3LTI4LjIxNC00Mi4zOC0yOC4yMTQtNjguMDk1IDAtMi4wMzYuMTc0LTQuMDIxLjI5Mi02LjAzMiAxLjQ1Mi0yMy40NTMgMTEuMTY1LTQ1LjMyNSAyNy45MjItNjIuMDcxIDIuMDg0LTIuMDc1IDQuMjY1LTQuMDIxIDYuNDkxLTUuODkybC4wMTQtLjAxM2MxNy4yNzMtMTQuNDEzIDM4LjgxNS0yMi4zMDMgNjEuNTkzLTIyLjMwMyA0LjE2MSAwIDguMjU2LjI4NSAxMi4yOS44MTIgMTIuNjQ4IDEuNjM4IDI0LjcwNSA1Ljc0OSAzNS42MzUgMTIuMDM0bC4zNTguMjQ0YzcuMTI4IDQuMTUgMTMuODE2IDkuMTM4IDE5LjgwNiAxNS4xMTYgMS40MDcgMS40MTcgMi42ODQgMi45MTYgMy45NzkgNC40bC4xNDYuMTZjMi42NDYgMy4wMTUgNS4wMTEgNi4yNDggNy4yNTIgOS41MjMgMS40MjYgMi4xMzYgMi44NTUgNC4yOCA0LjEwNiA2LjQ5OSA3LjczNiAxMy41MTMgMTIuMTE0IDI4LjczMyAxMi41ODIgNDQuNjY4LjAzNC45NTIuMTM0IDEuODc4LjEzNCAyLjg1My0uMDAxIDI1LjcxNy0xMC4wMSA0OS45MS0yOC4yIDY4LjA5N3oiLz48L3N2Zz4=') no-repeat;
   }
   .effect__content:after {
     content: "24";
@@ -1035,7 +1034,7 @@ img {
   .effect__content:before {
     width: 301px;
     height: 346px;
-    background: url('../img/timer_big.svg?1418886491') no-repeat;
+    background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOTguMDAxIiBoZWlnaHQ9IjM0NS4wOTciIHZpZXdCb3g9IjAgMCAyOTguMDAxIDM0NS4wOTciIGZpbGw9IiNkZWRlZGUiPjxwYXRoIGQ9Ik0yOTMuMDU3IDE1Ny45OGMtNS40NDItMjAuNjU3LTE1LjE5OC0zOS41NjMtMjguMjczLTU1LjY4OGw4LjU2Ny04LjU2M2M2LjA3NC02LjA3NyA2LjA3NC0xNS45MjggMC0yMS45OTktMy4zMzQtMy4zNC03Ljc4LTQuNjU2LTEyLjEyOS00LjMzMy0zLjU5Ni4yNTQtNy4xNDYgMS41OTYtOS44NjYgNC4zMzNsLTguNTYzIDguNTZjLTkuMDgzLTcuMzU0LTE5LjA4MS0xMy41NTItMjkuNzM0LTE4LjYyNy05LjYxNy00LjU1OC0xOS43NTEtOC4xOTUtMzAuMzM4LTEwLjY2OWwtLjMxMS0uMDM4Yy00LjU4Ny0xLjA2NS05LjIwNC0xLjk4NS0xMy45NjItMi42MTN2LTkuNDM5aDYuODc5YzEwLjczNyAwIDE5LjQ0Ni04LjcwOSAxOS40NDYtMTkuNDc0IDAtMTAuNzI0LTguNzA5LTE5LjQzLTE5LjQ0Ni0xOS40M2gtNTMuODMxOTk5OTk5OTk5OTk0Yy0xLjcxMyAwLTMuMzU2LjI4OC00Ljk2LjY5N2wtLjAyLjAyOWMtOC4zMjYgMi4yMDItMTQuNDYzIDkuNzE1LTE0LjQ2MyAxOC43MDQgMCAxMC43NjUgOC43MDkgMTkuNDc0IDE5LjQ0MiAxOS40NzRoOC4wNjJ2OS40MzljLTUwLjA4NiA2LjUzMy05Mi4yMTkgMzcuOTk2LTExMy44NTYgODEuNDQ4LTQuMzIgOC42NTgtNy44OTMgMTcuNzQ1LTEwLjQ1NCAyNy4yMzgtMy40IDEyLjQ1Ni01LjI0NiAyNS41MjYtNS4yNDYgMzkuMDYgMCA2NC40MTcgNDAuOTUyIDExOS4xNTkgOTguMjI3IDEzOS45NDYgMTUuODcxIDUuNzM0IDMyLjkyMiA5LjA2MiA1MC43NzIgOS4wNjIgNy40MzUgMCAxNC43MzYtLjU1OSAyMS44NTMtMS42MzMuNzYyLS4wOTYgMS40ODQtLjMyMSAyLjI1MS0uNDUxIDIwLjk2Ni0zLjQzMiA0MC41MjgtMTEuMTcgNTcuNTk2LTIyLjM5MiAyMy41NzEtMTUuNDk2IDQyLjM3OC0zNy40NjQgNTQuMDgxLTYzLjM4OSA4LjQyNC0xOC43MDEgMTMuMjIyLTM5LjMyNiAxMy4yMjItNjEuMTQ0LS4wMDEtMTMuMTY4LTEuNzI2LTI1LjkzNS00Ljk0NS0zOC4xMDh6bS02Ni4yMDkgMTE1Ljk2M2MtMTQuMTk0IDE0LjE4OS0zMS41ODEgMjMuODc3LTUwLjU0IDI4LjczNS02LjUwMSAxLjYyNi0xMy4yNTggMi41MS0yMC4wNjcgMi45NjYtLjk3MS4wNjEtMS44ODEuMjMtMi44NDUuMjQxLTEuNDc2LjA3Mi0yLjkxNi4yOTgtNC4zOTYuMjk4LTQuMDQ0IDAtOC4wNjItLjI2LTEyLjAzNC0uNjg4LTI0Ljg1OS0yLjY5OC00Ny44ODUtMTMuNjA5LTY1LjgyMy0zMS41NTItMjAuNzk0LTIwLjc5My0zMi4yNTgtNDguNDU0LTMyLjI1OC03Ny44NTQgMC0yLjMyOC4xOTgtNC41OTkuMzM0LTYuODk2IDEuNjU5LTI2LjgxNSAxMi43NjYtNTEuODIxIDMxLjkyNC03MC45NjkgMi4zODMtMi4zNzIgNC44NzUtNC41OTUgNy40MjEtNi43MzZsLjAxNi0uMDEzYzE5Ljc1LTE2LjQ4IDQ0LjM3OS0yNS41IDcwLjQyMS0yNS41IDQuNzU4IDAgOS40MzguMzI3IDE0LjA1MS45MjkgMTQuNDYyIDEuODcyIDI4LjI0NyA2LjU3MiA0MC43NDMgMTMuNzU5LjEzNi4wODMuMjg2LjE4NC40MDkuMjc5IDguMTUgNC43NDUgMTUuNzk4IDEwLjQ0NyAyMi42NDYgMTcuMjgyIDEuNjA4IDEuNjIxIDMuMDY3IDMuMzM0IDQuNTQ5IDUuMDMxbC4xNjcuMTg0YzMuMDI1IDMuNDQ3IDUuNzI5IDcuMTQyIDguMjkyIDEwLjg4OCAxLjYyOSAyLjQ0MiAzLjI2NCA0Ljg5NCA0LjY5NCA3LjQzMSA4Ljg0NSAxNS40NDkgMTMuODUxIDMyLjg1MiAxNC4zODYgNTEuMDcuMDM4IDEuMDg4LjE1MiAyLjE0Ny4xNTIgMy4yNjEtLjAwMiAyOS40LTExLjQ0NSA1Ny4wNjEtMzIuMjQyIDc3Ljg1NHoiLz48L3N2Zz4=') no-repeat;
   }
   .effect__content:after {
     left: 45px;
@@ -1067,7 +1066,7 @@ img {
   padding-bottom: 41px;
   background-color: #f2f2f2;
 }
-@media (min-width: 680px) {
+@media (min-width: 680px) and (max-width: 999px) {
   .price {
     padding-top: 84px;
     padding-bottom: 69px;
@@ -1091,7 +1090,7 @@ img {
   height: 35px;
   background-image: linear-gradient(to left top, #f2f2f2 50%, #ffffff 50%);
 }
-@media (min-width: 680px) {
+@media (min-width: 680px) and (max-width: 999px) {
   .price:before {
     height: 50px;
   }
@@ -1114,7 +1113,7 @@ img {
   margin: 0 auto 25px;
   overflow: hidden;
 }
-@media (min-width: 680px) {
+@media (min-width: 680px) and (max-width: 999px) {
   .price-table-wrap {
     min-height: 0;
     margin: 0;
@@ -1129,7 +1128,7 @@ img {
   text-align: left;
   transform: translateX(-50%);
 }
-@media (min-width: 680px) {
+@media (min-width: 680px) and (max-width: 999px) {
   .price-table {
     position: static;
     width: 620px;
@@ -1151,12 +1150,12 @@ img {
 .price-table td {
   vertical-align: middle;
 }
-@media (min-width: 680px) {
+@media (min-width: 680px) and (max-width: 999px) {
   .price-table td {
     width: 155px;
   }
 }
-@media (min-width: 680px) {
+@media (min-width: 680px) and (max-width: 999px) {
   .price-table td {
     width: 235px;
   }
@@ -1164,7 +1163,7 @@ img {
 .price-table td:first-child {
   display: none;
 }
-@media (min-width: 680px) {
+@media (min-width: 680px) and (max-width: 999px) {
   .price-table td:first-child {
     display: table-cell;
     border-right: none;
@@ -1297,7 +1296,7 @@ img {
   padding-top: 45px;
   padding-bottom: 30px;
 }
-@media (min-width: 680px) and (max-width: 1000px) {
+@media (min-width: 680px) and (max-width: 999px) {
   .reviews {
     padding-top: 8px;
     padding-bottom: 20px;
@@ -1368,7 +1367,7 @@ img {
   margin: 0 0 26px;
   line-height: 30px;
 }
-@media (min-width: 680px) {
+@media (min-width: 680px) and (max-width: 999px) {
   .reviews__text {
     margin-bottom: 44px;
     font-size: 18px;
@@ -1624,7 +1623,7 @@ img {
   width: 100%;
   height: 220px;
 }
-@media (min-width: 680px) {
+@media (min-width: 680px) and (max-width: 999px) {
   .page-footer__map {
     height: 380px;
   }
@@ -1681,26 +1680,26 @@ img {
 }
 .page-footer__logo {
   display: block;
-  background-image: url('../img/logo_3.png?1418886426');
+  background-image: url('../img/logo_3.png?1419104653');
   width: 145px;
   height: 40px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (-o-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
   .page-footer__logo {
-    background-image: url('../img/logo_3-2x.png?1418886426');
+    background-image: url('../img/logo_3-2x.png?1419104653');
     background-size: 145px 40px;
   }
 }
 @media (min-width: 1000px) {
   .page-footer__logo {
-    background-image: url('../img/logo_4.png?1418886426');
+    background-image: url('../img/logo_4.png?1419104653');
     width: 146px;
     height: 40px;
   }
 }
 @media only screen and (min-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1000px) and (min--moz-device-pixel-ratio: 1.5), only screen and (min-width: 1000px) and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-width: 1000px) and (-o-min-device-pixel-ratio: 1.5), only screen and (min-width: 1000px) and (min-resolution: 1.5dppx) {
   .page-footer__logo {
-    background-image: url('../img/logo_4-2x.png?1418886426');
+    background-image: url('../img/logo_4-2x.png?1419104653');
     background-size: 146px 40px;
   }
 }
