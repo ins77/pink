@@ -6,35 +6,34 @@
     height: 220px;
 
     @include tablet-only {
-      height: 380px;
+      height: 395px;
     }
 
     @include desktop {
       height: 511px;
     }
 
-    &:before {
-      content: "";
-      position: absolute;
-      top: -60px;
-      left: 50%;
-      z-index: 100;
-      transform: translateX(-50%);
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 124px 720px 0 720px;
-      border-color: #fff transparent transparent transparent;
+    // &:before {
+    //   content: "";
+    //   position: absolute;
+    //   top: -60px;
+    //   left: 50%;
+    //   transform: translateX(-50%);
+    //   width: 0;
+    //   height: 0;
+    //   border-style: solid;
+    //   border-width: 124px 720px 0 720px;
+    //   border-color: #fff transparent transparent transparent;
 
-      @include tablet-only {
-        top: -35px;
-      }
+    //   @include tablet-only {
+    //     top: -35px;
+    //   }
 
-      @include desktop {
-        top: 0;
-      }
+    //   @include desktop {
+    //     top: 0;
+    //   }
 
-    }
+    // }
 
   }
 

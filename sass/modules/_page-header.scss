@@ -3,6 +3,7 @@
   height: 729px;
   padding-top: 87px;
   color: #fff;
+  font-weight: 300;
   background: $blue image-url("header_bg.jpg") no-repeat 50% 0;
   overflow: hidden;
 
@@ -41,27 +42,22 @@
 
   }
 
-  &__text {
+  .title-text {
     width: 280px;
     margin: 0 auto 30px;
-    font-size: $font-size-md;
-    line-height: $line-height-auto;
-    font-weight: 300;
 
     @include tablet {
       position: absolute;
+      z-index: 10; // отображение поверх картинки с рукой, иначе нельзя выделить
       left: 20px;
-      z-index: 100;
       width: 300px;
       padding-left: 40px;
       padding-right: 40px;
-      font-size: $font-size-xl;
       text-align: center;
     }
 
     @include desktop {
       padding: 0;
-      font-size: $font-size-xxl;
     }
 
   }

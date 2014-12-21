@@ -11,7 +11,7 @@
     padding-top: 0;
     padding-bottom: 20px;
 
-    .slider__switcher {
+    .slider__controls-item {
       display: none;
     }
 
@@ -28,7 +28,7 @@
   
   &__title {
     margin-bottom: 17px;
-    font-size: $font-size-sm;
+    font-size: $font-size-heading-md;
     color: #000;
 
     @include tablet {
@@ -36,14 +36,14 @@
       bottom: 30px;
       width: 100%;
       margin-bottom: 0;
-      font-size: $font-size-sm + 2;
+      font-size: $font-size-heading-lg;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
 
     @include desktop {
-      font-size: $font-size-md;
+      font-size: $font-size-heading-xl;
       line-height: $line-height-md;
     }
 
@@ -74,7 +74,7 @@
     margin: 0 0 26px;
     line-height: $line-height-md;
 
-    @include tablet-only {
+    @include tablet {
       margin-bottom: 44px;
       font-size: $font-size-sm;
     }

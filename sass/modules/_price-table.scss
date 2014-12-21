@@ -30,14 +30,14 @@
 
   @include desktop {
     width: 940px;
-  }
+  } 
 
-  tr:first-child {
-    background-color: $blue; // решает некорректное отображение бордюров в firefox
-  }
-
-  tr:nth-child(n+2) {
+  tr {
     background-color: #fff; // решает некорректное отображение бордюров в firefox
+
+    &:first-child {
+      background-color: $blue; // решает некорректное отображение бордюров в firefox
+    }
   }
 
   td {
@@ -47,7 +47,7 @@
       width: 155px;
     }
 
-    @include tablet-only {
+    @include desktop {
       width: 235px;
     }
 
@@ -55,7 +55,7 @@
     &:first-child {
       display: none;
 
-      @include tablet-only {
+      @include tablet {
         display: table-cell;
         border-right: none;
       }
@@ -94,7 +94,6 @@
       @include use-sprite("hit");
 
       @include tablet-only {
-        left: 0;
         @include use-sprite("hit_sm");
       }
 
@@ -105,19 +104,19 @@
 
   &__title {
     margin: 0;
-    font-size: $font-size-sm;
+    font-size: $font-size-heading-md;
     line-height: $line-height-md;
     font-weight: 700;
 
     @include tablet-only {
-      font-size: 16px;
+      font-size: $font-size-heading-sm;
     }
 
   } 
 
 
   &__cost {
-    font-size: $font-size-md;
+    font-size: $font-size-lg;
     line-height: $line-height-md;
     font-weight: 300;
 
@@ -171,7 +170,7 @@
       height: 22px;
       background: inline-image("yes.svg") no-repeat 0 0;
 
-      @media (min-width: 680px) {
+      @include tablet {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -186,7 +185,7 @@
       height: 26px;
       background: inline-image("no.svg") no-repeat 0 0;
 
-      @media (min-width: 680px) {
+      @include tablet {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);

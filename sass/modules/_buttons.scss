@@ -4,7 +4,7 @@
   border: 3px solid #fff;
   color: #fff;
   font-weight: 700;
-  font-size: $font-size-sm;
+  font-size: $font-size-button-sm;
   text-align: center;
   text-decoration: none;
   line-height: $line-height-sm;
@@ -14,7 +14,7 @@
   transition: all .3s;
 
   @include desktop {
-    font-size: $font-size-base + 7px;
+    font-size: $font-size-button-lg;
   }
 
   &:hover,

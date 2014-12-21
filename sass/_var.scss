@@ -1,0 +1,50 @@
+// font-family
+$font-family-base: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+// font-size
+$font-size-base:           14px;
+$font-size-sm:             ceil(($font-size-base * 1.25));  // ~18px
+$font-size-lg:             ceil(($font-size-base * 1.7));   // ~24px
+
+$font-size-title-text-sm:  ceil(($font-size-base * 1.7));   // ~24px 
+$font-size-title-text-md:  ceil(($font-size-base * 2.85));  // ~40px  
+$font-size-title-text-lg:  ceil(($font-size-base * 3.55));  // ~50px 
+
+$font-size-heading-sm:     ceil(($font-size-base * 1.14));  // ~16px
+$font-size-heading-md:     ceil(($font-size-base * 1.25));  // ~18px 
+$font-size-heading-lg:     floor(($font-size-base * 1.43)); // ~20px 
+$font-size-heading-xl:     ceil(($font-size-base * 1.7));   // ~24px 
+$font-size-heading-xxl:    ceil(($font-size-base * 2.1));   // ~30px
+
+$font-size-button-sm:      ceil(($font-size-base * 1.25));  // ~18px
+$font-size-button-lg:      ceil(($font-size-base * 1.5));   // ~21px
+
+// line-height
+$line-height-base:  24px;
+$line-height-sm:    ($line-height-base - 6);
+$line-height-md:    ($line-height-base + 6);
+$line-height-lg:    ($line-height-base + 8);
+$line-height-xl:    ($line-height-base + 12);
+$line-height-auto:  1.2;
+
+// 1; 1.33333(24/18); 1,666666666666667(30/18); 1.25(30/24); 1,714285714285714(24/14); 1.2(36/30 and auto); 1.5(30/20); 2,142857142857143(30/14); 1.875(30/16); 
+
+
+
+// colors http://chir.ag/projects/name-that-color
+$gray:          #f2f2f2;
+$gray-light:    #e5e5e5;
+$gray-dark:     #bec2c7;
+
+$blue:          #283645;
+$blue-dark:     #1d2631;
+$pink:          #d22856;
+
+// color usage
+$c_text: $blue;
+
+
+
+// Responsive
+$tablet-width: 680px;
+$desktop-width: 1000px;
