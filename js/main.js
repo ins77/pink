@@ -4,10 +4,6 @@
   var nav = document.querySelector('.main-nav');
   var navList = document.querySelector('.main-nav__list');
   var mql = window.matchMedia('(min-width: 1000px)');
-  var linkInfo = document.querySelector('.js-link-info');
-  var linkFeatures = document.querySelector('.js-link-features');
-  var linkReviews = document.querySelector('.js-link-reviews');
-  var linkPrice = document.querySelector('.js-link-price');
 
   hamburger.addEventListener('click', function(event) {
     event.preventDefault();
