@@ -4,7 +4,7 @@
   padding-bottom: 41px;
   background-color: $gray;
 
-  @media (min-width: $screen-md) {
+  @include tablet-only {
     padding-top: 84px;
     padding-bottom: 69px;
 
@@ -13,12 +13,10 @@
     }
   }
 
-  @media (min-width: $screen-lg) {
+  @include desktop {
     padding-top: 139px;
-    padding-bottom: 113px;
+    padding-bottom: 37px;
   }
-
-
 
   &:before {
     content: "";
@@ -29,17 +27,17 @@
     height: 35px;
     background-image: linear-gradient(to left top, $gray 50%, #fff 50%);
 
-    @media (min-width: $screen-md) {
+    @include tablet-only {
       height: 50px  ;
     }
 
-    @media (min-width: $screen-lg) {
+    @include desktop {
       height: 75px;
     }
     
   }
 
-  .slider__switcher {
+  .slider__controls-item {
     border: 3px solid $gray;
 
     &--active {

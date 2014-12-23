@@ -9,10 +9,10 @@
 @import "vendor/normalize";
 
 // utilities
-@import "utilities/var";
-@import "utilities/mixins";
-@import "utilities/sprite";
-@import "utilities/placeholders";
+@import "var";
+@import "mixins";
+@import "sprite";
+@import "placeholders";
 
 // global
 @import "global/grid";

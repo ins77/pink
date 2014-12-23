@@ -5,14 +5,14 @@
   background-color: $gray;
   overflow: hidden;
 
-  @media (min-width: $screen-md) {
+  @include tablet {
     background-image: none;
     padding-bottom: 7px;
     padding-top: 75px;
     overflow: hidden;
   }  
 
-  @media (min-width: $screen-lg) {
+  @include desktop {
     padding-top: 0;
     font-size: $font-size-sm;
     line-height: $line-height-md;
@@ -27,11 +27,11 @@
     height: 35px;
     background-image: linear-gradient(to left top, $gray 50%, #fff 50%); 
 
-    @media (min-width: $screen-md) {
+    @include tablet {
       height: 55px;
     }
     
-    @media (min-width: $screen-lg) {
+    @include desktop {
       height: 75px;
     }
 
@@ -45,7 +45,7 @@
     transform: translateX(-50%);
     @include retina-image(phone_hello, 157px 320px);
 
-    @media (min-width: $screen-md) {
+    @include tablet {
       display: none;
     }
 
@@ -54,7 +54,7 @@
   &__items {
     text-align: center;
 
-    @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+    @include tablet-only {
       position: relative;
       float: right;
       width: 50%;
@@ -76,11 +76,11 @@
     position: relative;
     margin-bottom: 31px;
 
-    @media (min-width: $screen-md) {
+    @include tablet {
       margin-bottom: 35px;
     }
 
-    @media (min-width: $screen-lg) {
+    @include desktop {
       float: left;
       width: 300px;
       margin-right: 20px;

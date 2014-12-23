@@ -8,7 +8,7 @@
     height: 24px;
     background: inline-image("logo_sm.svg") no-repeat 0 0;
 
-    @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+    @include tablet-only {
       @include retina-image(logo_1, 145px 40px);
 
       &:hover {
@@ -17,7 +17,7 @@
 
     }
 
-    @media (min-width: $screen-lg) {
+    @include desktop {
       @include retina-image(logo_2, 146px 40px);
     }
 

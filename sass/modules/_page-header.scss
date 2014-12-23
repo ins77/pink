@@ -1,20 +1,20 @@
 .page-header {
   position: relative;
-  min-height: 729px;
+  height: 729px;
   padding-top: 87px;
   color: #fff;
+  font-weight: 300;
   background: $blue image-url("header_bg.jpg") no-repeat 50% 0;
   overflow: hidden;
 
-  @media (min-width: $screen-md) {
-    height: 729px;
+  @include tablet-only {
     padding-top: 203px;
     background-image: image-url("header_bg_2.jpg");
     background-size: cover;
   }
 
-  @media (min-width: $screen-lg) {
-    min-height: 854px;
+  @include desktop {
+    height: 854px;
     padding-top: 218px;
     background-image: image-url("header_bg_3.jpg");
     background-size: cover;
@@ -28,13 +28,13 @@
     margin: 0 auto;
     @include retina-image(header_bg_hand, 258px 286px, png, true);
 
-    @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+    @include tablet-only {
       right: 40px;
       bottom: 19px;
       @include retina-image(header_bg_hand_2, 700px 545px);
     }
 
-    @media (min-width: $screen-lg) {
+    @include desktop {
       right: -17px;
       bottom: 8px;
       @include retina-image(header_bg_hand_3, 1050px 645px);
@@ -42,27 +42,22 @@
 
   }
 
-  &__text {
+  .title-text {
     width: 280px;
     margin: 0 auto 30px;
-    font-size: $font-size-md;
-    line-height: $line-height-auto;
-    font-weight: 300;
 
-    @media (min-width: $screen-md) {
+    @include tablet {
       position: absolute;
+      z-index: 10; // отображение поверх картинки с рукой, иначе нельзя выделить
       left: 20px;
-      z-index: 100;
       width: 300px;
       padding-left: 40px;
       padding-right: 40px;
-      font-size: $font-size-xl;
       text-align: center;
     }
 
-    @media (min-width: $screen-lg) {
+    @include desktop {
       padding: 0;
-      font-size: $font-size-xxl;
     }
 
   }

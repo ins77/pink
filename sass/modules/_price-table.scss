@@ -4,7 +4,7 @@
   margin: 0 auto 25px;
   overflow: hidden;
 
-  @media (min-width: $screen-md) {
+  @include tablet-only {
     min-height: 0;
     margin: 0;
   }
@@ -21,33 +21,33 @@
   text-align: left;
   transform: translateX(-50%);
 
-  @media (min-width: $screen-md) {
+  @include tablet-only {
     position: static;
     width: 620px;
     margin: 0 auto;
     transform: none;
   }
 
-  @media (min-width: $screen-lg) {
+  @include desktop {
     width: 940px;
-  }
+  } 
 
-  tr:first-child {
-    background-color: $blue; // решает некорректное отображение бордюров в firefox
-  }
-
-  tr:nth-child(n+2) {
+  tr {
     background-color: #fff; // решает некорректное отображение бордюров в firefox
+
+    &:first-child {
+      background-color: $blue; // решает некорректное отображение бордюров в firefox
+    }
   }
 
   td {
     vertical-align: middle;
 
-    @media (min-width: $screen-md) {
+    @include tablet-only {
       width: 155px;
     }
 
-    @media (min-width: $screen-md) {
+    @include desktop {
       width: 235px;
     }
 
@@ -55,7 +55,7 @@
     &:first-child {
       display: none;
 
-      @media (min-width: $screen-md) {
+      @include tablet {
         display: table-cell;
         border-right: none;
       }
@@ -80,7 +80,7 @@
     color: #fff;
     text-align: center;
 
-    @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+    @include tablet-only {
       padding-top: 12px;
       padding-bottom: 7px;
     }
@@ -93,8 +93,7 @@
       left: -2px;
       @include use-sprite("hit");
 
-      @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
-        left: 0;
+      @include tablet-only {
         @include use-sprite("hit_sm");
       }
 
@@ -105,23 +104,23 @@
 
   &__title {
     margin: 0;
-    font-size: $font-size-sm;
+    font-size: $font-size-heading-md;
     line-height: $line-height-md;
     font-weight: 700;
 
-    @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
-      font-size: 16px;
+    @include tablet-only {
+      font-size: $font-size-heading-sm;
     }
 
   } 
 
 
   &__cost {
-    font-size: $font-size-md;
+    font-size: $font-size-lg;
     line-height: $line-height-md;
     font-weight: 300;
 
-    @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+    @include tablet-only {
       font-size: $font-size-sm;
     }
 
@@ -134,7 +133,7 @@
     border: 2px solid $gray-light;
     border-top: none;
 
-    @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+    @include tablet-only {
       font-size: 0;
       padding: 10px 15px 11px;
 
@@ -146,7 +145,7 @@
 
     }
 
-    @media (min-width: $screen-lg) {
+    @include desktop {
       padding-right: 22px;
       font-size: 0;
       text-transform: none;
@@ -171,7 +170,7 @@
       height: 22px;
       background: inline-image("yes.svg") no-repeat 0 0;
 
-      @media (min-width: 680px) {
+      @include tablet {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -186,7 +185,7 @@
       height: 26px;
       background: inline-image("no.svg") no-repeat 0 0;
 
-      @media (min-width: 680px) {
+      @include tablet {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);

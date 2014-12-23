@@ -1,16 +1,16 @@
 .title-text {
   margin-bottom: 30px;
-  font-size: $font-size-md;
+  font-size: $font-size-title-text-sm;
   line-height: $line-height-auto;
   font-weight: 300;
 
-  @media (min-width: $screen-md) {
+  @include tablet {
     margin-bottom: 45px;
-    font-size: $font-size-xl;
+    font-size: $font-size-title-text-md;
   }
 
-  @media (min-width: $screen-lg) {
-    font-size: $font-size-xxl;
+  @include desktop {
+    font-size: $font-size-title-text-lg;
   }
 
 }
@@ -28,14 +28,14 @@
 
 .h2 {
   margin-bottom: 12px;
-  font-size: $font-size-sm;
+  font-size: $font-size-heading-md;
   font-weight: 700;
   line-height: $line-height-base;
   color: #000;
 
-  @media (min-width: $screen-lg) {
+  @include desktop {
     margin-bottom: 24px;
-    font-size: $font-size-lg;
+    font-size: $font-size-heading-xxl;
     line-height: $line-height-md;
   }
   

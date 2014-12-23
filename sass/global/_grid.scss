@@ -5,11 +5,11 @@
   width: 320px;
   padding: 0 20px;
 
-  @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+  @include tablet-only {
     width: 660px;
   }
 
-  @media (min-width: $screen-lg) {
+  @include desktop {
     width: 980px;
   }
   

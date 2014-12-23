@@ -1,13 +1,12 @@
 .download {
   position: relative;
-  z-index: 100;
   width: 280px;
   margin: 0 auto;
   padding: 27px 0 30px;
   font-weight: 300; 
   color: #fff;
 
-  @media (min-width: $screen-md) {
+  @include tablet {
     position: absolute;
     left: 20px;
     top: 175px;
@@ -17,7 +16,7 @@
     font-size: $font-size-sm;
   }
 
-  @media (min-width: $screen-lg) {
+  @include desktop {
     top: 232px;
   }
 
@@ -30,11 +29,11 @@
     width: 46px;
     height: 60px;
 
-    @media (min-width: $screen-md) {
+    @include tablet {
       margin-bottom: 36px;
     }
     
-    @media (min-width: $screen-lg) {
+    @include desktop {
       margin-bottom: 55px;
     }
 
@@ -59,11 +58,11 @@
   .btn { 
     margin-bottom: 29px;
 
-    @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+    @include tablet-only {
       margin-bottom: 43px;
     }
     
-    @media (min-width: $screen-lg) {
+    @include desktop {
       margin-bottom: 64px;
     }
 

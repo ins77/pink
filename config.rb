@@ -2,18 +2,19 @@ require "compass/import-once/activate"
 
 project_type = :stand_alone
 http_path = "/"
-css_dir = "css"
+css_dir = "build/css"
 sass_dir = "sass"
 fonts_dir = "fonts"
-images_dir = "img"
+images_dir = "build/img"
 javascripts_dir = "js"
-# http_images_path = "http://my-site.com/img"
+# http_images_path = "build/img"
 # http_generated_images_path = "http://my-site.com/img" //sprites
 # environment = :production //сжимает выходной стиль css
 preferred_syntax = :scss
 output_style = :expanded  #or :nested or :compact or :compressed
 relative_assets = true 
 line_comments = false
+Encoding.default_external = "UTF-8" #solves the problem of compiling characters like №
 
 # If you prefer the indented syntax, you might want to regenerate this
 # project again passing --syntax sass, or you can uncomment this:

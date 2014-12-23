@@ -1,4 +1,6 @@
-assets/
-design/
-.sass-cache/
+assets
+design
+.sass-cache
+*.log
 prepros.cfg
+node_modules
